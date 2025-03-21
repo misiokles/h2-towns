@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2centauryard" : {
+				"name" : "洞穴",
+				"creatures" : [[ "h2centaur" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv1AVGtrog0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2gargoyleracks" : {
+				"name" : "土窖",
+				"creatures" : [[ "h2gargoyle" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv2AVGharp0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+
+					}
+				}
+			},
+			"h2griffinpen" : {
+				"name" : "巢穴",
+				"creatures" : [[ "h2griffin" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "warlock/adventure-map/lv3AVGbhld0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2minostrip" : {
+				"name" : "土牢",
+				"creatures" : [[ "h2medusa" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv4AVGmdsa0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2hydrapost" : {
+				"name" : "迷宫",
+				"creatures" : [[ "h2mino" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv5avgminb.def",
+						"mask" : [ "VVV", "VVBV", "VBA" ]
+					}
+				}
+			},
+			"h2medusafinery" : {
+				"name" : "沼泽",
+				"creatures" : [[ "h2hydra" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv6AVGmant0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2gredrage" : {
+				"name" : "龙之塔",
+				"creatures" : [[ "h2gred" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "warlock/adventure-map/lv7AVGrdrg0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"h2solv2":
+	{
+		"name" :
+		{
+			"plural" : "矮人",
+			"singular" : "矮人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "h2sorceress",
+		"upgrades": ["h2solv2up"],
+		"level" : 2,
+		"attack" : 5,
+		"defense" : 3,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 3
+		},
+		"growth" : 9,
+		"horde" : 10,
+		"hitPoints" : 10,
+		"speed" : 5,
+		"shots" : 24,
+		"fightValue" : 223,
+		"aiValue" : 220,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"graphics" :
+		{
+			"animation" : "Sorceress/creatures/battle/c016dwrf.def",
+			"map" : "Sorceress/creatures/map/lv2map.def",
+			"iconSmall" : "Sorceress/creatures/iconsSmall/CPrS016R.bmp",
+			"iconLarge" : "Sorceress/creatures/iconsBig/cprs016.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "LCRSATTK.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "LCRSKILL.wav",
+			"move": "LCRSMOVE.wav",
+			"shoot": "LCRSSHOT.wav",
+			"wince": "LCRSWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		  "shield effect" :{"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",	"val" : 3  }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

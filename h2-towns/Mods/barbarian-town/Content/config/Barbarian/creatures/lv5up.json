@@ -1,0 +1,132 @@
+{
+	"h2balv5up":
+	{
+		"name" :
+		{
+			"plural" : "高级食人魔",
+			"singular" : "高级食人魔"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "h2barbarian",
+        "level" : 5,
+		"attack" : 12,
+		"defense" : 10,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 12
+		},
+		"growth" : 3,
+		"hitPoints" : 40,
+		"speed" : 7,
+		"shots" : 24,
+		"fightValue" : 1064,
+		"aiValue" : 1185,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"graphics" :
+		{
+			"animation" : "Barbarian/creatures/battle/c093uogr.def",
+			"map" : "Barbarian/creatures/map/lv5upmap.def",
+			"iconSmall" : "Barbarian/creatures/iconsSmall/CPrS093S.bmp",
+			"iconLarge" : "Barbarian/creatures/iconsBig/cprs093.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+               },
+		"abilities" :
+		{
+			
+		   "deathStrike" :{"type" : "DOUBLE_DAMAGE_CHANCE","val" : 20},
+		   "shield effect" :{"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",	"val" : 20  }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.bloodlust",
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 0, 0, 4, 7, 10, 13, 16, 19, 22, 25 ]	
+			}
+		]
+	}
+}
+
+

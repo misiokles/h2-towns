@@ -1,0 +1,67 @@
+{
+	"h2wabarok" :
+	{
+		"class" : "h2warlock",
+		"texts" :
+		{
+			"name" : "巴洛克",
+			"biography" : "巴洛克是一个悲情的术士，经历了一段神秘的过去。他为阿拉马勋爵服务而失败，然后继续在阿基巴德·铁拳的领导下继续这一壮举。",
+			"specialty" :
+			{
+				"description" : "在抵抗术上每级得到5%的额外奖励。",
+				"tooltip" : "抵抗术",
+				"name" : "抵抗术"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/13barok/s-spec93.bmp",
+			"specialtyLarge" : "warlock/heroes/13barok/spec93.bmp",
+			"large" : "warlock/heroes/13barok/barok.bmp",
+			"small" : "warlock/heroes/13barok/barokl.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

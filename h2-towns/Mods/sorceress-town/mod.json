@@ -1,0 +1,67 @@
+{
+	"name" : "h2sorceress",
+	"description" : "h2Sorceress town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "女巫",
+		"description" : "新城镇女巫。"
+	},
+	"factions" :
+	[
+	"config/Sorceress/town/buildings.json",
+	"config/Sorceress/town/faction.json",
+	"config/Sorceress/town/puzzle.json",
+	"config/Sorceress/town/siege.json",
+	"config/Sorceress/town/structures.json"
+	],
+    "creatures" :
+    [
+    "config/Sorceress/creatures/lv1.json",
+	"config/Sorceress/creatures/lv1up.json",
+	"config/Sorceress/creatures/lv2.json",
+	"config/Sorceress/creatures/lv2up.json",
+	"config/Sorceress/creatures/lv3.json",
+	"config/Sorceress/creatures/lv3up.json",
+	"config/Sorceress/creatures/lv4.json",
+	"config/Sorceress/creatures/lv4up.json",
+	"config/Sorceress/creatures/lv5.json",
+	"config/Sorceress/creatures/lv5up.json",
+	"config/Sorceress/creatures/lv6.json",
+	"config/Sorceress/creatures/lv6up.json",
+	"config/Sorceress/creatures/lv7.json",
+	"config/Sorceress/creatures/lv7up.json",
+	"config/Sorceress/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+	"config/Sorceress/classes/h2soMight.json",
+	"config/Sorceress/classes/h2soMagic.json"
+	 ],
+    "heroes" :
+    [
+	"config/Sorceress/heroes/1Astra.json",
+	"config/Sorceress/heroes/2Karan.json",
+	"config/Sorceress/heroes/3Natasha.json",
+	"config/Sorceress/heroes/4Fatana.json",
+	"config/Sorceress/heroes/5Troan.json",
+	"config/Sorceress/heroes/6Gem.json",
+	"config/Sorceress/heroes/7Magre.json",
+	"config/Sorceress/heroes/8Luna.json",
+	"config/Sorceress/heroes/9Sister Elisa.json",
+	"config/Sorceress/heroes/10Rebecca.json",
+	"config/Sorceress/heroes/11Ariel.json",
+	"config/Sorceress/heroes/12Kasmetra.json",
+	"config/Sorceress/heroes/13Tina Stra.json",
+	"config/Sorceress/heroes/14Dorothy.json",
+	"config/Sorceress/heroes/15Tina.json",
+	"config/Sorceress/heroes/16Sharena.json"
+    ],
+    "objects" :
+    [
+    "config/Sorceress/dwellings.json"
+    ]
+}

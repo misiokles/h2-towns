@@ -1,0 +1,53 @@
+{
+	"h2frzanziya" :
+	{
+		"class" : "h2frMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/14Zanziya/s-spec126.bmp",
+			"specialtyLarge" : "Witch/heroes/14Zanziya/spec126.bmp",
+			"large" : "Witch/heroes/14Zanziya/HPL125WH.bmp",
+			"small" : "Witch/heroes/14Zanziya/HPS125WH.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "赞西亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供1水银。",
+				"tooltip" : "+1水银",
+				"name" : "+1水银"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"mercury" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}		
+	}
+}

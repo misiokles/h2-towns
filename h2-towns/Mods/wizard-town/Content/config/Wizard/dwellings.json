@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2wiDwelling1" : {
+				"name" : "繁殖地",
+				"creatures" : [[ "h2wilv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Wizard/creatures/dwellings/lv1AVGgrem0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2wiDwelling2" : {
+				"name" : "牲畜栏",
+				"creatures" : [[ "h2wilv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Wizard/creatures/dwellings/lv2avggarg0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2wiDwelling3" : {
+				"name" : "蘑菇房",
+				"creatures" : [[ "h2wilv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Wizard/creatures/dwellings/lv3AVGgolm0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2wiDwelling4" : {
+				"name" : "铸造厂",
+				"creatures" : [[ "h2wilv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Wizard/creatures/dwellings/lv4AVGMAGE0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2wiDwelling5" : {
+				"name" : "峭壁巢穴",
+				"creatures" : [[ "h2wilv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Wizard/creatures/dwellings/lv5AVGGENI0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2wiDwelling6" : {
+				"name" : "象牙塔",
+				"creatures" : [[ "h2wilv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Wizard/creatures/dwellings/lv6AVGNAGA0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2wiDwelling7" : {
+				"name" : "云间城堡",
+				"creatures" : [[ "h2wilv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Wizard/creatures/dwellings/lv7AVGtitn0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

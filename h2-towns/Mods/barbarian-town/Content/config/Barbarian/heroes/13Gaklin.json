@@ -1,0 +1,51 @@
+{
+	"h2bagaklin" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/13Gaklin/s-spec109.bmp",
+			"specialtyLarge" : "Barbarian/heroes/13Gaklin/spec109.bmp",
+			"large" : "Barbarian/heroes/13Gaklin/HPL108BM.bmp",
+			"small" : "Barbarian/heroes/13Gaklin/HPS108BM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2balv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2balv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "airMagic", "level": "basic" },
+			{ "skill" : "wisdom", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "加克林",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用丧心病狂魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。。",
+				"tooltip" : "丧心病狂",
+				"name" : "丧心病狂",
+			}
+		},
+		"spellbook" :
+		[
+			"berserk"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"berserk" : {
+					"subtype" : "spell.berserk",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		}	
+	}
+}

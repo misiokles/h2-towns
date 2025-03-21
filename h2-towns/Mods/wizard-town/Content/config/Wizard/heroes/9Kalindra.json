@@ -1,0 +1,49 @@
+{
+	"h2wikalindra" :
+	{
+		"class" : "h2wiMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/9Kalindra/s-spec41.bmp",
+			"specialtyLarge" : "Wizard/heroes/9Kalindra/spec41.bmp",
+			"large" : "Wizard/heroes/9Kalindra/HPL040WZ.bmp",
+			"small" : "Wizard/heroes/9Kalindra/HPS040WZ.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "卡林德拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高野猪与高级的攻击力与防御力。",
+				"tooltip" : "野猪",
+				"name" : "野猪"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2wilv2"
+		}		
+	}
+}
+
+
+

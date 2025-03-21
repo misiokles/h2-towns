@@ -1,0 +1,49 @@
+{
+	"h2baanten" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/10Anten/s-spec106.bmp",
+			"specialtyLarge" : "Barbarian/heroes/10Anten/spec106.bmp",
+			"large" : "Barbarian/heroes/10Anten/HPL105BM.bmp",
+			"small" : "Barbarian/heroes/10Anten/HPS105BM.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "mysticism", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "安特因",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "为王国每天额外提供1宝石。",
+				"tooltip" : "+1宝石",
+				"name" : "+1宝石"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+        "specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}	
+	}
+}

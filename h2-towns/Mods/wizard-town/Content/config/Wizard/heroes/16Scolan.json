@@ -1,0 +1,44 @@
+{
+	"h2wiscolan" :
+	{
+		"class" : "h2wiMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/16Scolan/s-spec48.bmp",
+			"specialtyLarge" : "Wizard/heroes/16Scolan/spec48.bmp",
+			"large" : "Wizard/heroes/16Scolan/HPL047WZ.bmp",
+			"small" : "Wizard/heroes/16Scolan/HPS047WZ.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "斯柯蓝",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高铁机器人或钢机器人的攻击力与防御力。",
+				"tooltip" : "铁机器人",
+				"name" : "铁机器人"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"creature" : "h2wilv4"
+		}		
+	}
+}

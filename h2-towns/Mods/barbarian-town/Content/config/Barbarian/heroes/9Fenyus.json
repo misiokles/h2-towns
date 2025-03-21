@@ -1,0 +1,59 @@
+{
+	"h2bafenyus" :
+	{
+		"class" : "h2baMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/9Fenyus/s-spec105.bmp",
+			"specialtyLarge" : "Barbarian/heroes/9Fenyus/spec105.bmp",
+			"large" : "Barbarian/heroes/9Fenyus/HPL104BM.bmp",
+			"small" : "Barbarian/heroes/9Fenyus/HPS104BM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "芬由斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加2。",
+				"tooltip" : "战争机器",
+				"name" : "战争机器"
+			}
+		},
+		"specialty":
+			{
+				"bonuses":
+				{
+				"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 2,
+						"valueType" : "BASE_NUMBER"
+					}
+				}
+			}
+	}
+}
+
+
+

@@ -1,0 +1,44 @@
+{
+	"h2wigorweilin" :
+	{
+		"class" : "h2wiMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/13Gorweilin/s-spec45.bmp",
+			"specialtyLarge" : "Wizard/heroes/13Gorweilin/spec45.bmp",
+			"large" : "Wizard/heroes/13Gorweilin/HPL044WZ.bmp",
+			"small" : "Wizard/heroes/13Gorweilin/HPS044WZ.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2wilv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2wilv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "戈尔韦林",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高侏儒与高级侏儒的攻击力与防御力。",
+				"tooltip" : "侏儒",
+				"name" : "侏儒",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2wilv1"
+		}		
+	}
+}

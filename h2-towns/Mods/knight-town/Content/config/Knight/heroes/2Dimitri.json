@@ -1,0 +1,54 @@
+{
+	"h2csdimitri" :
+	{
+		"class" : "h2csMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/2Dimitri/s-spec2.bmp",
+			"specialtyLarge" : "Knight/heroes/2Dimitri/spec2.bmp",
+			"large" : "Knight/heroes/2Dimitri/HPL001KN.bmp",
+			"small" : "Knight/heroes/2Dimitri/HPS001KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "scouting", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "迪米特里",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在侦察术上每级获得5%的提升。",
+				"tooltip" : "侦察术",
+				"name" : "侦察术"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"bonuses" : {
+                "sight" : {
+					"type" : "SIGHT_RADIUS",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+                    "updater" : {
+                        "parameters" : [ 6 ],
+                        "type" : "GROWS_WITH_LEVEL"
+                    }
+				}
+			}	
+		}		
+	}
+}

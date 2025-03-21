@@ -1,0 +1,71 @@
+{
+	"h2wacrodo" :
+	{
+		"class" : "h2waamigo",
+
+        "texts" :
+		{
+			"name" : "阿密古",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用护体石肤魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "Spell Bonus: Stone skin",
+				"name" : "护体石肤"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/1Amigo/s-spec81.png",
+			"specialtyLarge" : "warlock/heroes/1Amigo/spec81.png",
+			"large" : "warlock/heroes/1Amigo/HPL080OV.png",
+			"small" : "warlock/heroes/1Amigo/HPS080OV.png"
+		},
+
+		"spellbook" :
+		[
+			"stoneSkin"
+		],
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"stoneSkin" : {
+					"subtype" : "spell.stoneSkin",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}			
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"h2wagargoyle" :
+	{
+		"class" : "h2warlock",
+
+        "texts" :
+		{
+			"name" : "盖里克",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在后勤学上每级得到5%的额外奖励。",
+				"tooltip" : "后勤学",
+				"name" : "后勤学"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/15Gargoyle/s-spec95.bmp",
+			"specialtyLarge" : "warlock/heroes/15Gargoyle/spec95.bmp",
+			"large" : "warlock/heroes/15Gargoyle/HPL094WL.bmp",
+			"small" : "warlock/heroes/15Gargoyle/HPS094WL.bmp"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

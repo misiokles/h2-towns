@@ -1,0 +1,50 @@
+{
+	"h2deMagic" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"mageGuild1":     { "animation" : "Dervish/town-screen/buildings/0tbelmage.def",  "x" : 131, "y" : 87, "z" : -1,    "border" : "Dervish/town-screen/buildings-border/0TOELMAGe.bmp", "area" : "Dervish/town-screen/buildings-area/0TZELMAGe.bmp" },
+				"mageGuild2":     { "animation" : "Dervish/town-screen/buildings/1TBELmag2.def",  "x" : 131, "y" : 87, "z" : -1,    "border" : "Dervish/town-screen/buildings-border/1TOELMAG2.bmp", "area" : "Dervish/town-screen/buildings-area/1TZELMAG2.bmp" },
+				"mageGuild3":     { "animation" : "Dervish/town-screen/buildings/2TBELmag3.def",  "x" : 131, "y" : 87, "z" : -1,    "border" : "Dervish/town-screen/buildings-border/2ToELMAG3.bmp", "area" : "Dervish/town-screen/buildings-area/2TzELMAG3.bmp" },
+				"mageGuild4":     { "animation" : "Dervish/town-screen/buildings/3TBELmag4.def",  "x" : 131, "y" : 87,  "z" : -1,    "border" : "Dervish/town-screen/buildings-border/3ToELMAG4.bmp", "area" : "Dervish/town-screen/buildings-area/3TzELMAG4.bmp" },
+				"mageGuild5":     { "animation" : "Dervish/town-screen/buildings/4TBELmag5.def",  "x" : 131, "y" : 87,  "z" : -1,    "border" : "Dervish/town-screen/buildings-border/4ToELMAG5.bmp", "area" : "Dervish/town-screen/buildings-area/4TzELMAG5.bmp" },
+				"tavern":         { "animation" : "Dervish/town-screen/buildings/5TBELtvrn.def",  "x" : 151,   "y" : 212, "z" : 1,    "border" : "Dervish/town-screen/buildings-border/5toeltvrn.bmp", "area" : "Dervish/town-screen/buildings-area/5tzeltvrn.bmp" },				
+				"shipyard" :      { "animation" : "Dervish/town-screen/buildings/6tbeldock.def",  "x" : 8, "y" : 310, "z" : 4,        "border" : "Dervish/town-screen/buildings-border/6toeldock.bmp", "area" : "Dervish/town-screen/buildings-area/6tzeldock.bmp" },
+				"fort":           { "animation" : "Dervish/town-screen/buildings/7tbelcstl.def",  "x" : 158, "y" : 31,  "z" : -4,   "border" : "Dervish/town-screen/buildings-border/7Toelcstl.bmp", "area" : "Dervish/town-screen/buildings-area/7Tzelcstl.bmp" },
+				"citadel":        { "animation" : "Dervish/town-screen/buildings/8tbelcas2.def",  "x" : 158, "y" : 31,  "z" : -4,   "border" : "Dervish/town-screen/buildings-border/8Toelcas2.bmp", "area" : "Dervish/town-screen/buildings-area/8Tzelcas2.bmp" },
+				"castle":         { "animation" : "Dervish/town-screen/buildings/9tbelcas3.def",  "x" : 158, "y" : 31,  "z" : -4,   "border" : "Dervish/town-screen/buildings-border/9Toelcas3.bmp", "area" : "Dervish/town-screen/buildings-area/9Tzelcas3.bmp" },
+				"villageHall":    { "animation" : "Dervish/town-screen/buildings/10TBELhall.def",  "x" : 8,   "y" : 243, "z" : 2,             "border" : "Dervish/town-screen/buildings-border/10toelhall.bmp", "area" : "Dervish/town-screen/buildings-area/10tzelhall.bmp" },
+				"townHall":       { "animation" : "Dervish/town-screen/buildings/11TBELhal2.def",  "x" : 8,   "y" : 200, "z" : 2,             "border" : "Dervish/town-screen/buildings-border/11toelhal2.bmp", "area" : "Dervish/town-screen/buildings-area/11tzelhal2.bmp" },
+				"cityHall":       { "animation" : "Dervish/town-screen/buildings/12TBELhal3.def",  "x" : 8,   "y" : 168, "z" : 2,             "border" : "Dervish/town-screen/buildings-border/12toelhal3.bmp", "area" : "Dervish/town-screen/buildings-area/12tzelhal3.bmp" },
+				"capitol":        { "animation" : "Dervish/town-screen/buildings/13TBELhal4.def",  "x" : 8,   "y" : 142, "z" : 2,             "border" : "Dervish/town-screen/buildings-border/13toelhal4.bmp", "area" : "Dervish/town-screen/buildings-area/13tzelhal4.bmp" },
+				"marketplace":    { "animation" : "Dervish/town-screen/buildings/14TBELmark.def",  "x" : 394, "y" : 241, "z" : 2,             "border" : "Dervish/town-screen/buildings-border/14toelmark.bmp", "area" : "Dervish/town-screen/buildings-area/14tzelmark.bmp" },
+				"resourceSilo":   { "animation" : "Dervish/town-screen/buildings/15TBELsilo.def",  "x" : 392, "y" : 243, "z" : 4,             "border" : "Dervish/town-screen/buildings-border/15Toelsilo.bmp", "area" : "Dervish/town-screen/buildings-area/15Tzelsilo.bmp" },
+				"blacksmith":     { "animation" : "Dervish/town-screen/buildings/16TBELBLAK.def",  "x" : 250, "y" : 277, "z" : 1,             "border" : "Dervish/town-screen/buildings-border/16TOELBLAK.bmp", "area" : "Dervish/town-screen/buildings-area/16TZELBLAK.bmp" },				
+				"special1":       { "animation" : "Dervish/town-screen/buildings/17TBELSpec.def",  "x" : 514, "y" : 191, "z" : -2,   "border" : "Dervish/town-screen/buildings-border/17toelspec.bmp", "area" : "Dervish/town-screen/buildings-area/17tzelspec.bmp" },
+				"horde1":         { "animation" : "Dervish/town-screen/buildings/18tbelhrd1.def",  "x" : 639,  "y" : 274,  "z" : -1,   "border" : "Dervish/town-screen/buildings-border/18toelhrd1.bmp", "area" : "Dervish/town-screen/buildings-area/18tzelhrd1.bmp", "hidden" : true },
+				"horde1Upgr":     { "animation" : "Dervish/town-screen/buildings/19tbelhrd2.def",  "x" : 629,  "y" : 267,  "z" : -1,   "border" : "Dervish/town-screen/buildings-border/19toelhrd2.bmp", "area" : "Dervish/town-screen/buildings-area/19tzelhrd2.bmp", "hidden" : true, "builds" : "horde1" },
+				"ship" :          { "animation" : "Dervish/town-screen/buildings/20tbelboat.def",  "x" : 8, "y" : 310, "z" : 5,        "border" : "Dervish/town-screen/buildings-border/20toelboat.bmp", "area" : "Dervish/town-screen/buildings-area/20tzelboat.bmp", "hidden" : true },
+				"special2":       { "animation" : "Dervish/town-screen/buildings/21TBELSpec2.def",  "x" : 230, "y" : 192, "z" : -3,   "border" : "Dervish/town-screen/buildings-border/21toelspec1.bmp", "area" : "Dervish/town-screen/buildings-area/21tzelspec1.bmp" },
+				"special3":       { "animation" : "Dervish/town-screen/buildings/22TBELSpec3.def",  "x" : 540,   "y" : 134, "z" :  -2,   "border" : "Dervish/town-screen/buildings-border/22toelspec2.bmp", "area" : "Dervish/town-screen/buildings-area/22tzelspec2.bmp" },
+				"special4":       { "animation" : "Dervish/town-screen/buildings/23TBELSpec4.def",  "x" : 132, "y" : 083, "z" : -2,   "border" : "Dervish/town-screen/buildings-border/23toelspec3.bmp", "area" : "Dervish/town-screen/buildings-area/23tzelspec3.bmp" },
+				"grail":          { "animation" : "Dervish/town-screen/buildings/26GRAIL.def",  "x" : 460,   "y" : 242,   "z" : 5,   "border" : "Dervish/town-screen/buildings-border/26TOCSGRAIL.bmp", "area" : "Dervish/town-screen/buildings-area/26TZCSGRAIL.bmp" },
+				"dwellingLvl1":   { "animation" : "Dervish/town-screen/buildings/30tbeldw_0.def",  "x" : 639, "y" : 274, "z" : 1,              "border" : "Dervish/town-screen/buildings-border/30toeldw_0.bmp", "area" : "Dervish/town-screen/buildings-area/30tzeldw_0.bmp" },
+				"dwellingLvl2":   { "animation" : "Dervish/town-screen/buildings/31tbeldw_1.def",  "x" : 152, "y" : 201, "z" : -2,             "border" : "Dervish/town-screen/buildings-border/31toeldw_1.bmp", "area" : "Dervish/town-screen/buildings-area/31tzeldw_1.bmp" },
+				"dwellingLvl3":   { "animation" : "Dervish/town-screen/buildings/32tbeldw_2.def",  "x" : 608,  "y" : 229,  "z" : 1,   "border" : "Dervish/town-screen/buildings-border/32toeldw_2.bmp", "area" : "Dervish/town-screen/buildings-area/32tzeldw_2.bmp" },
+				"dwellingLvl4":   { "animation" : "Dervish/town-screen/buildings/33tbeldw_3.def",  "x" : 550, "y" : 74, "z" : 1,             "border" : "Dervish/town-screen/buildings-border/33toeldw_3.bmp", "area" : "Dervish/town-screen/buildings-area/33tzeldw_3.bmp" },
+				"dwellingLvl5":   { "animation" : "Dervish/town-screen/buildings/34tbeldw_4.def",  "x" : 400, "y" : 316, "z" : 1,    "border" : "Dervish/town-screen/buildings-border/34toeldw_4.bmp", "area" : "Dervish/town-screen/buildings-area/34tzeldw_4.bmp" },
+				"dwellingLvl6":   { "animation" : "Dervish/town-screen/buildings/35tbeldw_5.def",  "x" : 632, "y" : 66, "z" : -1,   "border" : "Dervish/town-screen/buildings-border/35toeldw_5.bmp", "area" : "Dervish/town-screen/buildings-area/35tzeldw_5.bmp" },
+				"dwellingLvl7":   { "animation" : "Dervish/town-screen/buildings/36tbeldw_6.def",  "x" : 18,   "y" : 10,   "z" : 1,    "border" : "Dervish/town-screen/buildings-border/36toeldw_6.bmp", "area" : "Dervish/town-screen/buildings-area/36tzeldw_6.bmp" },
+				"dwellingUpLvl1": { "animation" : "Dervish/town-screen/buildings/37tbelup_0.def",  "x" : 629, "y" : 267, "z" : 1,              "border" : "Dervish/town-screen/buildings-border/37toelup_0.bmp", "area" : "Dervish/town-screen/buildings-area/37tzelup_0.bmp" },
+				"dwellingUpLvl2": { "animation" : "Dervish/town-screen/buildings/38TBELup_1.def",  "x" : 152, "y" : 210, "z" : -2,             "border" : "Dervish/town-screen/buildings-border/38toelup_1.bmp", "area" : "Dervish/town-screen/buildings-area/38tzelup_1.bmp" },			  
+				"dwellingUpLvl3": { "animation" : "Dervish/town-screen/buildings/39TBELup_2.def",  "x" : 608,  "y" : 229,  "z" : 1,   "border" : "Dervish/town-screen/buildings-border/39toelup_2.bmp", "area" : "Dervish/town-screen/buildings-area/39tzelup_2.bmp" },
+				"dwellingUpLvl4": { "animation" : "Dervish/town-screen/buildings/40TBELup_3.def",  "x" : 550, "y" : 74, "z" : 1,              "border" : "Dervish/town-screen/buildings-border/40toelup_3.bmp", "area" : "Dervish/town-screen/buildings-area/40tzelup_3.bmp" },
+				"dwellingUpLvl5": { "animation" : "Dervish/town-screen/buildings/41TBELup_4.def",  "x" : 400, "y" : 316, "z" : 1,    "border" : "Dervish/town-screen/buildings-border/41toelup_4.bmp", "area" : "Dervish/town-screen/buildings-area/41tzelup_4.bmp" },
+				"dwellingUpLvl6": { "animation" : "Dervish/town-screen/buildings/42TBELup_5.def",  "x" : 632, "y" : 66, "z" : -1,   "border" : "Dervish/town-screen/buildings-border/42toelup_5.bmp", "area" : "Dervish/town-screen/buildings-area/42tzelup_5.bmp" },
+				"dwellingUpLvl7": { "animation" : "Dervish/town-screen/buildings/43TBELup_6.def",  "x" : 18,   "y" : 10,   "z" : 1,    "border" : "Dervish/town-screen/buildings-border/43toelup_6.bmp", "area" : "Dervish/town-screen/buildings-area/43tzelup_6.bmp" }
+			}
+		}
+	}
+}

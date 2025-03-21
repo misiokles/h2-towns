@@ -1,0 +1,59 @@
+{
+	"h2deuncleivan" :
+	{
+		"class" : "h2deMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/7Uncle Ivan/s-spec135.bmp",
+			"specialtyLarge" : "Dervish/heroes/7Uncle Ivan/spec135.bmp",
+			"large" : "Dervish/heroes/7Uncle Ivan/HPL006PL.bmp",
+			"small" : "Dervish/heroes/7Uncle Ivan/HPS006PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "伊凡叔叔",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在抵抗力上每级获得5%的奖励。",
+				"tooltip" : "抵抗力",
+				"name" : "抵抗力"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name" : "h2barbarian",
+	"description" : "Barbarian town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "野人",
+		"description" : "新城镇野人。"
+	},
+	"factions" :
+	[
+	"config/Barbarian/town/buildings.json",
+	"config/Barbarian/town/faction.json",
+	"config/Barbarian/town/puzzle.json",
+	"config/Barbarian/town/siege.json",
+	"config/Barbarian/town/structures.json"
+	],
+    "creatures" :
+    [
+    "config/Barbarian/creatures/lv1.json",
+	"config/Barbarian/creatures/lv1up.json",
+	"config/Barbarian/creatures/lv2.json",
+	"config/Barbarian/creatures/lv2up.json",
+	"config/Barbarian/creatures/lv3.json",
+	"config/Barbarian/creatures/lv3up.json",
+	"config/Barbarian/creatures/lv4.json",
+	"config/Barbarian/creatures/lv4up.json",
+	"config/Barbarian/creatures/lv5.json",
+	"config/Barbarian/creatures/lv5up.json",
+	"config/Barbarian/creatures/lv6.json",
+	"config/Barbarian/creatures/lv6up.json",
+	"config/Barbarian/creatures/lv7.json",
+	"config/Barbarian/creatures/lv7up.json",
+	"config/Barbarian/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+	"config/Barbarian/classes/h2baMagic.json",
+	"config/Barbarian/classes/h2baMight.json"
+	 ],
+    "heroes" :
+    [
+	"config/Barbarian/heroes/1Sendax.json",
+	"config/Barbarian/heroes/2He Yueshi.json",
+	"config/Barbarian/heroes/3Krieghak.json",
+	"config/Barbarian/heroes/4Yatsby.json",
+	"config/Barbarian/heroes/5Elgon.json",
+	"config/Barbarian/heroes/6Atlas.json",
+	"config/Barbarian/heroes/7Yag.json",
+	"config/Barbarian/heroes/8Chabu.json",
+	"config/Barbarian/heroes/9Fenyus.json",
+	"config/Barbarian/heroes/10Anten.json",
+	"config/Barbarian/heroes/11Ilti.json",
+	"config/Barbarian/heroes/12Solson.json",
+	"config/Barbarian/heroes/13Gaklin.json",
+	"config/Barbarian/heroes/14Mohan.json",
+	"config/Barbarian/heroes/15Sony.json",
+	"config/Barbarian/heroes/16Uruk.json"
+    ],
+    "objects" :
+    [
+    "config/Barbarian/dwellings.json"
+    ]
+}

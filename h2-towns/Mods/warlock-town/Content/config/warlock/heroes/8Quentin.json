@@ -1,0 +1,73 @@
+{
+	"h2waquentin" :
+	{
+		"class" : "h2warlock",
+
+        "texts" :
+		{
+			"name" : "昆汀",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：进攻术",
+				"name" : "进攻术"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/8Quentin/spec-small.bmp",
+			"specialtyLarge" : "warlock/heroes/8Quentin/spec-large.bmp",
+			"large" : "warlock/heroes/8Quentin/HPL087OV.bmp",
+			"small" : "warlock/heroes/8Quentin/HPS087OV.bmp"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty": {
+			"bonuses": {
+				"offence": {
+					"targetSourceType": "SECONDARY_SKILL",
+					"type": "PERCENTAGE_DAMAGE_BOOST",
+					"subtype" : "damageTypeMelee",
+					"val": 5,
+					"valueType": "PERCENT_TO_BASE",
+					"updater": "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

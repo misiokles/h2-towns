@@ -1,0 +1,127 @@
+{
+	"h2hydra":
+	{
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "warlock",
+		"aiValue" : 1112,
+		"attack" : 16,
+		"cost" :
+		{
+			"gold" : 800
+		},
+		"damage" :
+		{
+			"max" : 35,
+			"min" : 20
+		},
+		"defense" : 12,
+		"fightValue" : 880,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/CR203.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lilhydra.def",
+			"iconSmall" : "warlock/iconsSmall/CPRS203F.bmp",
+			"iconLarge" : "warlock/iconsBig/CPrL203B.bmp",
+			"timeBetweenFidgets" : 1,
+			},
+		"growth" : 3,
+		"hitPoints" : 75,
+	    "doubleWide" : true,
+		"level" : 6,
+		"name" : { "plural" : "九头蛇", "singular" : "九头蛇" },
+		"upgrades":
+		[
+			"h2hydra2"
+		],
+		"sound" :
+		{
+			"attack": "HYDRATTK.wav",
+			"defend": "HYDRDFND.wav",
+			"killed": "HYDRKILL.wav",
+			"move": "HYDRMOVE.wav",
+			"wince": "HYDRWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities":
+		{
+			"noRetaliate" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+			"attackAll" :
+			{
+				"type" : "ATTACKS_ALL_ADJACENT"
+			}
+		},
+		"stackExperience" :
+ 
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

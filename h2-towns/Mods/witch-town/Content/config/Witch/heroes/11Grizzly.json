@@ -1,0 +1,50 @@
+{
+	"h2frgrizzly" :
+	{
+		"class" : "h2frMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/11Grizzly/s-spec123.bmp",
+			"specialtyLarge" : "Witch/heroes/11Grizzly/spec123.bmp",
+			"large" : "Witch/heroes/11Grizzly/HPL122WH.bmp",
+			"small" : "Witch/heroes/11Grizzly/HPS122WH.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "格里兹利",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高螳螂或高级螳螂的攻击力与防御力。",
+				"tooltip" : "螳螂",
+				"name" : "螳螂"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"creature" : "h2frlv5"
+		}	
+	}
+}

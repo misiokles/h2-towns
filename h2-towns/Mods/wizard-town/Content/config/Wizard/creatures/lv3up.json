@@ -1,0 +1,141 @@
+{
+	"h2wilv3up":
+	{
+		"name" :
+		{
+			"plural" : "高级大地精",
+			"singular" : "高级大地精"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "h2wizard",
+		"hasDoubleWeek": true,
+		"aiValue" : 597,
+		"attack" : 9,
+		"doubleWide" : false,
+                "cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 4,
+		"fightValue" : 561,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "Wizard/creatures/battle/c033gnomup.def",
+			"map" : "Wizard/creatures/map/lv3upmap.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS033T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs033.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 30,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"speed" : 9,
+		"abilities":
+		{
+			"canCast" :{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.haste",
+				"val" : 3	
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+					
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{ 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

@@ -1,0 +1,194 @@
+{
+	"h2necromancer" :
+	{
+		"name" : "亡灵巫师",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "lava",
+		"boat" : "boatCastle",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "Necromancer/creature-bg-120px.bmp",
+			"130px" : "Necromancer/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "Necromancer/adventure-map/town/avcnecx0.def" },
+					"citadel" : { "animation" : "Necromancer/adventure-map/town/avcnecx0.def" },
+					"fort"    : { "animation" : "Necromancer/adventure-map/town/avcnecr0.def" },
+					"village" : { "animation" : "Necromancer/adventure-map/town/avcnecr0.def" },
+					"capitol" : { "animation" : "Necromancer/adventure-map/town/avcnecx0.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/necroTown"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "h2neMight"    : 5,
+                "h2neMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "Necromancer/town-screen/background.bmp",
+			"guildWindow": "Necromancer/town-screen/mage-guild.bmp",
+			"buildingsIcons": "Necromancer/HALLNECR.def",
+			"hallBackground": "Necromancer/town-screen/ZPTHBKDG.bmp",
+            "primaryResource" : "ore",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1" ], [ "shipyard" ] ],
+				[ [ "special2" ], [ "special3" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" :
+			[
+				["h2nelv1", "h2nelv1up"],
+				["h2nelv2", "h2nelv2up"],
+				["h2nelv3", "h2nelv3up"],
+				["h2nelv4", "h2nelv4up"],
+				["h2nelv5", "h2nelv5up"],
+				["h2nelv6", "h2nelv6up"],
+				["h2nelv7", "h2nelv7up"]
+			],
+			"horde" : [ 0, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "Necromancer/icons/fort-builded-big.bmp",
+						"small" : "Necromancer/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "Necromancer/icons/fort-big.bmp", "small" : "Necromancer/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "Necromancer/icons/hall-builded-big.bmp",
+						"small" : "Necromancer/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "Necromancer/icons/hall-big.bmp", "small" : "Necromancer/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"夜影城",
+                "希尔顿堡",
+                "托斯维尔",
+                "布拉克福德",
+                "威斯特摩兰",
+                "黑桥城",
+                "黑血城",
+                "黑风城",
+                "卡思卡特",
+                "暗云城",
+                "冰魄城",
+                "鬼风城",
+                "圣殿",
+                "死亡之门",
+                "永暗城",
+                "痛苦之城",
+                "永夜城"
+			]
+		}
+	}
+}
+

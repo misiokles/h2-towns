@@ -1,0 +1,59 @@
+{
+	"h2frkemok" :
+	{
+		"class" : "h2frMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/7Kemok/s-spec119.bmp",
+			"specialtyLarge" : "Witch/heroes/7Kemok/spec119.bmp",
+			"large" : "Witch/heroes/7Kemok/HPL118BS.bmp",
+			"small" : "Witch/heroes/7Kemok/HPS118BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "sorcery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			},
+		],
+		"texts" :
+		{
+			"name" : "克摩克",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在智力技能上每级得到5%的额外奖励。",
+				"tooltip" : "智力",
+				"name" : "智力"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}		
+	}
+}

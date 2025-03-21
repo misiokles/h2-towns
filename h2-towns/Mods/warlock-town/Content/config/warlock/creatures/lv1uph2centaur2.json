@@ -1,0 +1,146 @@
+{
+	"h2centaur2":
+	{
+		"advMapAmount" :
+		{
+			"max" : 50,
+			"min" : 20
+		},
+		"faction" : "warlock",
+		"aiValue" : 121,
+		"attack" : 5,
+		"cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			"max" : 3,
+			"min" : 1
+		},
+		"defense" : 5,
+		"fightValue" : 113,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/lv2up.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lv2upmap.def",
+			"iconSmall" : "warlock/iconsSmall/lv2up.bmp",
+			"iconLarge" : "warlock/iconsBig/lv2up.bmp",
+			"missile" : {
+		            "attackClimaxFrame" : 8,
+		            "frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0],
+			        "offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -59,
+					"middleX" : 58,
+					"middleY" : -59,
+					"lowerX" : 29,
+					"lowerY" : -59
+				},
+     				"projectile" : "PELFX.DEF",		
+			},		
+		         	"timeBetweenFidgets" : 1,
+		},	
+		"growth" : 6,
+		"hitPoints" : 6,
+	    "doubleWide" : true,
+		"horde" : 8,
+		"level" : 1,
+		"name" : { "plural" : "高级半人马", "singular" : "高级半人马" },
+		"shots" : 13,			
+		"sound" :
+		{
+			"attack": "WELFATTK.wav",
+			"defend": "CNTRDFND.wav",
+			"killed": "CNTRKILL.wav",
+			"move": "CNTRMOVE.wav",
+			"shoot": "WELFSHOT.wav",
+			"wince": "CNTRWNCE.wav"
+		},
+		"speed" : 9,
+        "abilities" :
+        {
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty": 
+		    { 
+		        "type": "NO_MELEE_PENALTY"
+		    }  	
+		},
+		"stackExperience" :
+ 
+		[
+{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_MELEE_PENALTY"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			},
+			{
+				"bonus" : { "type" : "SHOTS" }, "values" : [ 0, 0, 0, 0, 0, 2, 2, 3, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.gnoll"
+				},
+				"values" : [ 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 ]
+			}
+		]
+	}
+}

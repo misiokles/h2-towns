@@ -1,0 +1,60 @@
+{
+	"h2wiaschu" :
+	{
+		"class" : "h2wiMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/14Aschu/s-spec46.bmp",
+			"specialtyLarge" : "Wizard/heroes/14Aschu/spec46.bmp",
+			"large" : "Wizard/heroes/14Aschu/HPL045WZ.bmp",
+			"small" : "Wizard/heroes/14Aschu/HPS045WZ.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "亚斯楚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "始终以高级效果施放双目失明魔法。",
+				"tooltip" : "双目失明。",
+				"name" : "双目失明"
+			}
+		},
+		"spellbook" :
+		[
+			"blind"
+		],
+		"specialty": 
+			{
+				"bonuses":
+				{
+				"blind":{
+				"type" : "SPELL",
+				"subtype" : "spell.blind",
+				"val" : 3,
+				"valueType" : "INDEPENDENT_MAX"
+					}
+				}
+			}		
+	}
+}

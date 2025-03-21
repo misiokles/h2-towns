@@ -1,0 +1,67 @@
+{
+	"name" : "csknight",
+	"description" : "Knight town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "骑士",
+		"description" : "新城镇骑士。"
+	},
+	"factions" :
+	[
+	"config/Knight/town/buildings.json",
+	"config/Knight/town/faction.json",
+	"config/Knight/town/puzzle.json",
+	"config/Knight/town/siege.json",
+	"config/Knight/town/structures.json"
+	],
+    "creatures" :
+    [
+    "config/Knight/creatures/lv1.json",
+	"config/Knight/creatures/lv1up.json",
+	"config/Knight/creatures/lv2.json",
+	"config/Knight/creatures/lv2up.json",
+	"config/Knight/creatures/lv3.json",
+	"config/Knight/creatures/lv3up.json",
+	"config/Knight/creatures/lv4.json",
+	"config/Knight/creatures/lv4up.json",
+	"config/Knight/creatures/lv5.json",
+	"config/Knight/creatures/lv5up.json",
+	"config/Knight/creatures/lv6.json",
+	"config/Knight/creatures/lv6up.json",
+	"config/Knight/creatures/lv7.json",
+	"config/Knight/creatures/lv7up.json",
+	"config/Knight/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+	"config/Knight/classes/h2csMight.json",
+	"config/Knight/classes/h2csMagic.json"
+	 ],
+    "heroes" :
+    [
+	"config/Knight/heroes/1h2Kilburn.json",
+	"config/Knight/heroes/2Dimitri.json",
+	"config/Knight/heroes/3Eckert.json",
+	"config/Knight/heroes/4Tyro.json",
+	"config/Knight/heroes/5Mgeisa.json",
+	"config/Knight/heroes/6Ruby.json",
+	"config/Knight/heroes/7Hart monarch.json",
+	"config/Knight/heroes/8Sir Galant.json",
+	"config/Knight/heroes/9Ambrose.json",
+	"config/Knight/heroes/10Kritus.json",
+	"config/Knight/heroes/11Subtuberculosis.json",
+	"config/Knight/heroes/12Maxim.json",
+	"config/Knight/heroes/13Kristian.json",
+	"config/Knight/heroes/14Gwenis.json",
+	"config/Knight/heroes/15Jialafan.json",
+	"config/Knight/heroes/16Ebolon Monarch.json"
+    ],
+    "objects" :
+    [
+    "config/Knight/dwellings.json"
+    ]
+}

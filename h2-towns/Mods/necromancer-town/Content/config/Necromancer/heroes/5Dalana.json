@@ -1,0 +1,50 @@
+{
+	"h2nedalana" :
+	{
+		"class" : "h2neMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/5Dalana/s-spec69.bmp",
+			"specialtyLarge" : "Necromancer/heroes/5Dalana/spec69.bmp",
+			"large" : "Necromancer/heroes/5Dalana/HPL068DK.bmp",
+			"small" : "Necromancer/heroes/5Dalana/HPS068DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "达拉娜",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高木乃伊或高级木乃伊的攻击力与防御力。",
+                "tooltip" : "木乃伊。",
+                "name" : "木乃伊"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+		"creature" : "h2nelv3"
+	    }
+  }
+}

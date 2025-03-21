@@ -1,0 +1,44 @@
+{
+	"h2nevandora" :
+	{
+		"class" : "h2neMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/13Vandora/s-spec77.bmp",
+			"specialtyLarge" : "Necromancer/heroes/13Vandora/spec77.bmp",
+			"large" : "Necromancer/heroes/13Vandora/HPL076NC.bmp",
+			"small" : "Necromancer/heroes/13Vandora/HPS076NC.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2nelv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2nelv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "intelligence", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "凡多拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高吸血鬼或高级吸血鬼的攻击力与防御力。",
+				"tooltip" : "吸血鬼",
+				"name" : "吸血鬼",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2nelv4"
+		}			
+	}
+}

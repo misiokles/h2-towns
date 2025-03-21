@@ -1,0 +1,66 @@
+{
+	"h2wafalagar" :
+	{
+		"class" : "h2warlock",
+		"texts" :
+		{
+			"name" : "法拉伽",
+			"biography" : "法拉伽是作为一个简单的术士入行的，但他所拥有的不仅仅是眼神。",
+			"specialty" :
+			{
+				"description" : "在魔力技能上每级得到5%的额外奖励。",
+				"tooltip" : "技能加成：魔力",
+				"name" : "魔力"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/4falagar/s-spec84.bmp",
+			"specialtyLarge" : "warlock/heroes/4falagar/spec84.bmp",
+			"large" : "warlock/heroes/4falagar/falagar.bmp",
+			"small" : "warlock/heroes/4falagar/falagarl.bmp"
+		},
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

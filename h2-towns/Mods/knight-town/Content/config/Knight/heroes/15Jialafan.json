@@ -1,0 +1,44 @@
+{
+	"h2csjialafan" :
+	{
+		"class" : "h2csMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/15Jialafan/s-spec15.bmp",
+			"specialtyLarge" : "Knight/heroes/15Jialafan/spec15.bmp",
+			"large" : "Knight/heroes/15Jialafan/HPL014CL.bmp",
+			"small" : "Knight/heroes/15Jialafan/HPS014CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv4", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "eagleEye", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "佳拉凡",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩手或高级弩手的攻击力与防御力。",
+				"tooltip" : "弩手和高级弩手",
+				"name" : "弩手"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"creature" : "h2cslv4"
+		}		
+	}
+}

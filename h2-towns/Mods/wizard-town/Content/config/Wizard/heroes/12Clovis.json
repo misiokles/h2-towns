@@ -1,0 +1,52 @@
+{
+	"h2wiclovis" :
+	{
+		"class" : "h2wiMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/12Clovis/s-spec44.bmp",
+			"specialtyLarge" : "Wizard/heroes/12Clovis/spec44.bmp",
+			"large" : "Wizard/heroes/12Clovis/HPL043WZ.bmp",
+			"small" : "Wizard/heroes/12Clovis/HPS043WZ.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "learning", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "克劳维斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在学习术技能上每级得到5%的额外奖励。",
+				"tooltip" : "学习术",
+				"name" : "学习术"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"learning" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

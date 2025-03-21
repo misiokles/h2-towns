@@ -1,0 +1,67 @@
+{
+	"name" : "h2wizard",
+	"description" : "Fen town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "精灵",
+		"description" : "新城镇精灵。"
+	},
+	"factions" :
+	[
+	"config/Wizard/town/buildings.json",
+	"config/Wizard/town/faction.json",
+	"config/Wizard/town/puzzle.json",
+	"config/Wizard/town/siege.json",
+	"config/Wizard/town/structures.json"
+	],
+    "creatures" :
+    [
+    "config/Wizard/creatures/lv1.json",
+	"config/Wizard/creatures/lv1up.json",
+	"config/Wizard/creatures/lv2.json",
+	"config/Wizard/creatures/lv2up.json",
+	"config/Wizard/creatures/lv3.json",
+	"config/Wizard/creatures/lv3up.json",
+	"config/Wizard/creatures/lv4.json",
+	"config/Wizard/creatures/lv4up.json",
+	"config/Wizard/creatures/lv5.json",
+	"config/Wizard/creatures/lv5up.json",
+	"config/Wizard/creatures/lv6.json",
+	"config/Wizard/creatures/lv6up.json",
+	"config/Wizard/creatures/lv7.json",
+	"config/Wizard/creatures/lv7up.json",
+	"config/Wizard/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+	"config/Wizard/classes/h2wiMagic.json",
+	"config/Wizard/classes/h2wiMight.json"
+	 ],
+    "heroes" :
+    [
+	"config/Wizard/heroes/1Mundigo.json",
+	"config/Wizard/heroes/2Sarakin.json",
+	"config/Wizard/heroes/3Flint.json",
+	"config/Wizard/heroes/4Halon.json",
+	"config/Wizard/heroes/5Deong.json",
+	"config/Wizard/heroes/6Vilfrey.json",
+	"config/Wizard/heroes/7Mira.json",
+	"config/Wizard/heroes/8Marini.json",
+	"config/Wizard/heroes/9Kalindra.json",
+	"config/Wizard/heroes/10Tessa.json",
+	"config/Wizard/heroes/11Segovian.json",
+	"config/Wizard/heroes/12Clovis.json",
+	"config/Wizard/heroes/13Gorweilin.json",
+	"config/Wizard/heroes/14Aschu.json",
+	"config/Wizard/heroes/15Somra.json",
+	"config/Wizard/heroes/16Scolan.json"
+    ],
+    "objects" :
+    [
+    "config/Wizard/dwellings.json"
+    ]
+}

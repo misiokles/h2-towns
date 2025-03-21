@@ -1,0 +1,51 @@
+{
+	"h2neseria" :
+	{
+		"class" : "h2neMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/8Seria/s-spec72.bmp",
+			"specialtyLarge" : "Necromancer/heroes/8Seria/spec72.bmp",
+			"large" : "Necromancer/heroes/8Seria/HPL071DK.bmp",
+			"small" : "Necromancer/heroes/8Seria/HPS071DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "塞里亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "使用护体石肤魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "护体石肤",
+				"name" : "护体石肤"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"stoneSkin" : {
+					"subtype" : "spell.stoneSkin",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}			
+			}
+		}
+	}
+}

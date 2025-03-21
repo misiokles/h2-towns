@@ -1,0 +1,194 @@
+{
+	"h2witch" :
+	{
+		"name" : "萨满",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "swamp",
+		"boat" : "boatCastle",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "Witch/creature-bg-120px.bmp",
+			"130px" : "Witch/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "Witch/adventure-map/town/Avcftrx0.def" },
+					"citadel" : { "animation" : "Witch/adventure-map/town/Avcftrx0.def" },
+					"fort"    : { "animation" : "Witch/adventure-map/town/AVCftrc0.def" },
+					"village" : { "animation" : "Witch/adventure-map/town/AVCftrc0.def" },
+					"capitol" : { "animation" : "Witch/adventure-map/town/Avcftrx0.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/Dirt"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "h2frMight"    : 5,
+                "h2frMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "Witch/town-screen/background.bmp",
+			"guildWindow": "Witch/town-screen/mage-guild.bmp",
+			"buildingsIcons": "Witch/hallfort.def",
+			"hallBackground": "Witch/town-screen/zpthbkfr.bmp",
+            "primaryResource" : "crystal",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
+				[ [ "special2", "special1" ], [ "special3" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" :
+			[
+				["h2frlv1", "h2frlv1up"],
+				["h2frlv2", "h2frlv2up"],
+				["h2frlv3", "h2frlv3up"],
+				["h2frlv4", "h2frlv4up"],
+				["h2frlv5", "h2frlv5up"],
+				["h2frlv6", "h2frlv6up"],
+				["h2frlv7", "h2frlv7up"]
+			],
+			"horde" : [ 0, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "Witch/icons/fort-builded-big.bmp",
+						"small" : "Witch/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "Witch/icons/fort-big.bmp", "small" : "Witch/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "Witch/icons/hall-builded-big.bmp",
+						"small" : "Witch/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "Witch/icons/hall-big.bmp", "small" : "Witch/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"布林达摩尔",
+                "草籽城",
+                "罗斯科曼",
+                "隐士湾",
+                "蛇穴",
+                "毒雾谷",
+                "罗斯摩尔",
+                "垂柳城",
+                "戴德伍德",
+                "厄齐沃特",
+                "斯蒂尔伯格",
+                "陷阱镇",
+                "库迈尔",
+                "莫斯伍德",
+                "马斯沃尔",
+                "莫斯顿",
+                "泥石城"
+			]
+		}
+	}
+}
+

@@ -1,0 +1,50 @@
+{
+	"h2bayatsby" :
+	{
+		"class" : "h2baMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/4Yatsby/s-spec100.bmp",
+			"specialtyLarge" : "Barbarian/heroes/4Yatsby/spec100.bmp",
+			"large" : "Barbarian/heroes/4Yatsby/HPL099BR.bmp",
+			"small" : "Barbarian/heroes/4Yatsby/HPS099BR.bmp"
+		},
+                "army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "sorcery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "耶茨贝",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用嗜血奇术魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "嗜血奇术",
+				"name" : "嗜血奇术"
+			}
+		},
+		"spellbook" :
+		[
+			"bloodlust"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bloodlust" : {
+					"subtype" : "spell.bloodlust",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

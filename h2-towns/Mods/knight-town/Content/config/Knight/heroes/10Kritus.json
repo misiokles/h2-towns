@@ -1,0 +1,52 @@
+{
+	"h2cskritus" :
+	{
+		"class" : "h2csMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/10Kritus/s-spec10.bmp",
+			"specialtyLarge" : "Knight/heroes/10Kritus/spec10.bmp",
+			"large" : "Knight/heroes/10Kritus/HPL009CL.bmp",
+			"small" : "Knight/heroes/10Kritus/HPS009CL.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "logistics", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "克里图斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "在后勤术上每级得到5%的额外奖励。",
+				"tooltip" : "后勤术",
+				"name" : "后勤术"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+        "specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

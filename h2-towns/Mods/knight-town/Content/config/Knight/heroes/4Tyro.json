@@ -1,0 +1,52 @@
+{
+	"h2cstyro" :
+	{
+		"class" : "h2csMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/4Tyro/s-spec4.bmp",
+			"specialtyLarge" : "Knight/heroes/4Tyro/spec4.bmp",
+			"large" : "Knight/heroes/4Tyro/HPL003KN.bmp",
+			"small" : "Knight/heroes/4Tyro/HPS003KN.bmp"
+		},
+                "army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "offence", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "泰罗",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "进攻术",
+				"name" : "进攻术"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,112 @@
+{
+	"h2solv7" : {
+		"advMapAmount" : {"max" : 10, "min" : 4},
+		"aiValue" : 3698,
+		"attack" : 19,
+		"cost" : { "gold" :  1800, "mercury" : 1},
+		"damage" : {"max" : 45, "min" : 25},
+		"defense" : 20,
+		"faction" : "h2sorceress",
+		"fightValue" : 2946,
+		"graphics" : {
+                        "animation" : "Sorceress/creatures/battle/c026phnx.def",
+			"map" : "Sorceress/creatures/map/lv7map.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 0.8 },
+			"iconSmall" : "Sorceress/creatures/iconsSmall/CPrS026R.bmp",
+			"iconLarge" : "Sorceress/creatures/iconsBig/cprs026.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 1,
+		"hitPoints" : 180,
+		"speed" : 9,
+                "doubleWide" : true,
+		"level" : 7,
+		"upgrades": ["h2solv7up"],
+		"name" : { "plural" : "凤凰", "singular" : "凤凰" },
+		"sound" : {
+			"attack" : "TempATTK.wav",
+			"defend" : "TempDFND.wav",
+			"killed" : "TempDEAD.wav",
+			"move" : "TempMOVE.wav",
+			"wince" : "TempWNCE.wav"
+		},
+		 "abilities":
+		{
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 40
+			},
+			"flamethrower" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"firstStrike" :
+			{
+				"type" : "FIRST_STRIKE"
+			},
+			"rebirth" : {"type" : "REBIRTH","val" : 10},
+		"canFly" : {	"type" : "FLYING"	}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.prayer",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]	
+	}
+}

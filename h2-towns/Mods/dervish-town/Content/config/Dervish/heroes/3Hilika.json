@@ -1,0 +1,47 @@
+{
+	"h2dehilika" :
+	{
+		"class" : "h2deMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/3Hilika/s-spec131.bmp",
+			"specialtyLarge" : "Dervish/heroes/3Hilika/spec131.bmp",
+			"large" : "Dervish/heroes/3Hilika/HPL002PL.bmp",
+			"small" : "Dervish/heroes/3Hilika/HPS002PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "希利卡",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高美杜莎或美杜莎女王的攻击力与防御力。",
+				"tooltip" : "美杜莎",
+				"name" : "美杜莎"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2delv4"
+		}	
+	}
+}

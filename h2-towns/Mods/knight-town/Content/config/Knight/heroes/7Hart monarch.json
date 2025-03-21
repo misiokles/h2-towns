@@ -1,0 +1,60 @@
+{
+	"h2cshartmonarch" :
+	{
+		"class" : "h2csMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/7Hartmonarch/s-spec7.bmp",
+			"specialtyLarge" : "Knight/heroes/7Hartmonarch/spec7.bmp",
+			"large" : "Knight/heroes/7Hartmonarch/HPL006KN.bmp",
+			"small" : "Knight/heroes/7Hartmonarch/HPS006KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "哈特君主",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在理财术上每级得到5%的额外奖励。",
+				"tooltip" : "理财术",
+				"name" : "理财术"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"estates" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}				
+	}
+}

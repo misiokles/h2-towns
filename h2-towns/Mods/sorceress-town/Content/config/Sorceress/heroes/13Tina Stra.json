@@ -1,0 +1,44 @@
+{
+	"h2sotinastra" :
+	{
+		"class" : "h2soMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/13Tina Stra/s-spec29.bmp",
+			"specialtyLarge" : "Sorceress/heroes/13Tina Stra/spec29.bmp",
+			"large" : "Sorceress/heroes/13Tina Stra/HPL028DR.bmp",
+			"small" : "Sorceress/heroes/13Tina Stra/HPS028DR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2solv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2solv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "蒂娜斯特拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高独角兽或高级独角兽的攻击力与防御力。",
+				"tooltip" : "特长: 独角兽和高级独角兽",
+				"name" : "独角兽",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+		"creature" : "h2solv6"
+	    }
+	}
+}

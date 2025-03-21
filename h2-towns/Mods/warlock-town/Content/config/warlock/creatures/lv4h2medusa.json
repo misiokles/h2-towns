@@ -1,0 +1,135 @@
+{
+	"h2medusa":
+	{
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"faction" : "warlock",
+		"aiValue" : 1586,
+		"attack" : 11,
+		"cost" :
+		{
+			"gold" : 650
+		},
+		"damage" :
+		{
+			"max" : 18,
+			"min" : 8
+		},
+		"defense" : 8,
+		"fightValue" : 1363,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/c076bhld.DEF",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lv6map.def",
+			"iconSmall" : "warlock/iconsSmall/CPrS076D.bmp",
+			"iconLarge" : "warlock/iconsBig/cprs076.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"doubleWide" : false,
+		"growth" : 10,
+		"hitPoints" : 65,
+		"level" : 4,
+		"name" : { "plural" : "邪眼", "singular" : "邪眼" },
+		"upgrades":
+		[
+			"h2medusa2"
+		],
+		"sound" :
+		{
+			"attack": "MEDUATTK.wav",
+			"defend": "MEDUDFND.wav",
+			"killed": "MEDUKILL.wav",
+			"move": "MEDUMOVE.wav",
+			"wince": "MEDUWNCE.wav"
+		},
+		"speed" : 10,
+		"abilities":
+		{
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 40
+			},
+			"canFly" : {	"type" : "FLYING"	},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"increaseManaCost" :
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val" : 2
+			},
+			"petrifyImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.stoneGaze",
+				"addInfo" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]			
+			}
+		]
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"h2cssubtuberculosis" :
+	{
+		"class" : "h2csMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/11Subtuberculosis/s-spec11.bmp",
+			"specialtyLarge" : "Knight/heroes/11Subtuberculosis/spec11.bmp",
+			"large" : "Knight/heroes/11Subtuberculosis/HPL010CL.bmp",
+			"small" : "Knight/heroes/11Subtuberculosis/HPS010CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "亚突理",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用亡灵杀手法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "亡灵杀手",
+				"name" : "亡灵杀手"
+			}
+		},
+		"spellbook" :
+		[
+			"destroyUndead"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"destroyUndead" : {
+					"subtype" : "spell.destroyUndead",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}		
+	}
+}

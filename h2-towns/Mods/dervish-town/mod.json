@@ -1,0 +1,71 @@
+{
+	"name" : "h2deMagic",
+	"description" : "Dervish town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "苦修士",
+		"description" : "新城镇苦修士。"
+	},
+	"factions" :
+	[
+		"config/Dervish/town/buildings.json",
+		"config/Dervish/town/faction.json",
+		"config/Dervish/town/puzzle.json",
+		"config/Dervish/town/siege.json",
+		"config/Dervish/town/structures.json"
+	],
+    "creatures" :
+    [
+		"config/Dervish/creatures/lv1.json",
+		"config/Dervish/creatures/lv1up.json",
+		"config/Dervish/creatures/lv2.json",
+		"config/Dervish/creatures/lv2up.json",
+		"config/Dervish/creatures/lv3.json",
+		"config/Dervish/creatures/lv3up.json",
+		"config/Dervish/creatures/lv4.json",
+		"config/Dervish/creatures/lv4up.json",
+		"config/Dervish/creatures/lv5.json",
+		"config/Dervish/creatures/lv5up.json",
+		"config/Dervish/creatures/lv6.json",
+		"config/Dervish/creatures/lv6up.json",
+		"config/Dervish/creatures/lv7.json",
+		"config/Dervish/creatures/lv7up.json",
+		"config/Dervish/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+		"config/Dervish/classes/h2deMagic.json",
+		"config/Dervish/classes/h2deMight.json"
+	 ],
+    "heroes" :
+    [
+		"config/Dervish/heroes/1Joseph.json",
+		"config/Dervish/heroes/2Adrian.json",
+		"config/Dervish/heroes/3Hilika.json",
+		"config/Dervish/heroes/4Madan.json",
+		"config/Dervish/heroes/5Jacquenas.json",
+		"config/Dervish/heroes/6Ibn Fadland.json",
+		"config/Dervish/heroes/7Uncle Ivan.json",
+		"config/Dervish/heroes/8Rogue.json",
+		"config/Dervish/heroes/9Marcus.json",
+		"config/Dervish/heroes/10Xerxes.json",
+		"config/Dervish/heroes/11Suleiman.json",
+		"config/Dervish/heroes/12Sean.json",
+		"config/Dervish/heroes/13Dalia.json",
+		"config/Dervish/heroes/14Timur.json",
+		"config/Dervish/heroes/15Iser.json",
+		"config/Dervish/heroes/16Decken.json"
+    ],
+    "objects" :
+    [
+		"config/Dervish/dwellings.json"
+    ],
+	"spells":
+	[
+		"config/Dervish/spells/cas07eff.json"
+	]
+}

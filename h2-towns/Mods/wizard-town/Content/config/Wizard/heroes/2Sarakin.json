@@ -1,0 +1,44 @@
+{
+	"h2wisarakin" :
+	{
+		"class" : "h2wiMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/2Sarakin/s-spec34.bmp",
+			"specialtyLarge" : "Wizard/heroes/2Sarakin/spec34.bmp",
+			"large" : "Wizard/heroes/2Sarakin/HPL033AL.bmp",
+			"small" : "Wizard/heroes/2Sarakin/HPS033AL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "armorer", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "撒拉金",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高祆教僧侣或高级祆教僧侣的攻击力与防御力。",
+				"tooltip" : "祆教僧侣和高级祆教僧侣",
+				"name" : "祆教僧侣"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2wilv6"
+		}		
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"h2witch" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"mageGuild1":     { "animation" : "Witch/town-screen/buildings/0TBFRMAGE.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/0ToFmag1a.bmp", "area" : "Witch/town-screen/buildings-area/0TZFmag1a.bmp" },
+				"mageGuild2":     { "animation" : "Witch/town-screen/buildings/1TBFRMAG2.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/1ToFmag2a.bmp", "area" : "Witch/town-screen/buildings-area/1TZFmag2a.bmp" },
+				"mageGuild3":     { "animation" : "Witch/town-screen/buildings/2TBFRMAG3.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/2ToFmag3a.bmp", "area" : "Witch/town-screen/buildings-area/2TZFmag3a.bmp" },
+				"mageGuild4":     { "animation" : "Witch/town-screen/buildings/3TBFRMAG4.def",  "x" : 0, "y" : 0,  "z" : 1,    "border" : "Witch/town-screen/buildings-border/3tofmag4a.bmp", "area" : "Witch/town-screen/buildings-area/3tzfmag4a.bmp" },
+				"mageGuild5":     { "animation" : "Witch/town-screen/buildings/4TBFRMAG5.def",  "x" : 0, "y" : 0,  "z" : 1,    "border" : "Witch/town-screen/buildings-border/4tofmag5a.bmp", "area" : "Witch/town-screen/buildings-area/4tzfmag5a.bmp" },
+				"tavern":         { "animation" : "Witch/town-screen/buildings/5TBFRTVRN.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/5ToFTAVA.bmp", "area" : "Witch/town-screen/buildings-area/5TZFTAVA.bmp" },				
+				"shipyard" :      { "animation" : "Witch/town-screen/buildings/6TBFRDOCK.def",  "x" : 0, "y" : 0, "z" : 4,        "border" : "Witch/town-screen/buildings-border/6ToFDCK1.bmp", "area" : "Witch/town-screen/buildings-area/6TZFDCK1.bmp" },
+				"fort":           { "animation" : "Witch/town-screen/buildings/7TBFRCSTL.def",  "x" : 0, "y" : 0,  "z" : -4,   "border" : "Witch/town-screen/buildings-border/7ToFcas1.bmp", "area" : "Witch/town-screen/buildings-area/7TZFcas1.bmp" },
+				"citadel":        { "animation" : "Witch/town-screen/buildings/8TBFRCAS2.def",  "x" : 0, "y" : 0,  "z" : -4,   "border" : "Witch/town-screen/buildings-border/8ToFCAS2.bmp", "area" : "Witch/town-screen/buildings-area/8TZFCAS2.bmp" },
+				"castle":         { "animation" : "Witch/town-screen/buildings/9TBFRCAS3.def",  "x" : 0, "y" : 0,  "z" : -4,   "border" : "Witch/town-screen/buildings-border/9ToFCAS3.bmp", "area" : "Witch/town-screen/buildings-area/9TZFCAS3.bmp" },
+				"villageHall":    { "animation" : "Witch/town-screen/buildings/10TBFRhall.def",  "x" : 0,   "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/10ToFhal1.bmp", "area" : "Witch/town-screen/buildings-area/10TZFhal1.bmp" },
+				"townHall":       { "animation" : "Witch/town-screen/buildings/11TBFRhal2.def",  "x" : 0,   "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/11ToFhal2.bmp", "area" : "Witch/town-screen/buildings-area/11TZFhal2.bmp" },
+				"cityHall":       { "animation" : "Witch/town-screen/buildings/12TBFRhal3.def",  "x" : 0,   "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/12ToFhal3.bmp", "area" : "Witch/town-screen/buildings-area/12TZFhal3.bmp" },
+				"capitol":        { "animation" : "Witch/town-screen/buildings/13TBFRhal4.def",  "x" : 0,   "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/13ToFhal4.bmp", "area" : "Witch/town-screen/buildings-area/13TZFhal4.bmp" },
+				"marketplace":    { "animation" : "Witch/town-screen/buildings/14TBFRMARK.def",  "x" : 0, "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/14ToFmrkaa.bmp", "area" : "Witch/town-screen/buildings-area/14TZFmrkaa.bmp" },
+				"resourceSilo":   { "animation" : "Witch/town-screen/buildings/15TBFRSILO.def",  "x" : 0, "y" : 0, "z" : 2,             "border" : "Witch/town-screen/buildings-border/15ToFSILO.bmp", "area" : "Witch/town-screen/buildings-area/15TZFSILO.bmp" },
+				"blacksmith":     { "animation" : "Witch/town-screen/buildings/16TBFRBLAK.def",  "x" : 0, "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/16ToFaida.bmp", "area" : "Witch/town-screen/buildings-area/16TZFaida.bmp" },				
+				"special1":       { "animation" : "Witch/town-screen/buildings/17TBFRSPEC.def",  "x" : 0, "y" : 0, "z" : -2,   "border" : "Witch/town-screen/buildings-border/17ToFCAGE.bmp", "area" : "Witch/town-screen/buildings-area/17TZFCAGE.bmp" },
+				"horde1":         { "animation" : "Witch/town-screen/buildings/18TBFRHRD1.def",  "x" : 0,  "y" : 0,  "z" : -1,   "border" : "Witch/town-screen/buildings-border/18ToFGnl1H.bmp", "area" : "Witch/town-screen/buildings-area/18TZFGnl1H.bmp", "hidden" : true },
+				"horde1Upgr":     { "animation" : "Witch/town-screen/buildings/19TBFRHRD2.def",  "x" : 0,  "y" : 0,  "z" : -1,   "border" : "Witch/town-screen/buildings-border/19ToFGnl2H.bmp", "area" : "Witch/town-screen/buildings-area/19TZFGnl2H.bmp", "hidden" : true, "builds" : "horde1" },
+				"ship" :          { "animation" : "Witch/town-screen/buildings/20TBFRBOAT.def",  "x" : 0, "y" : 0, "z" : 5,        "border" : "Witch/town-screen/buildings-border/20ToFDCK2.bmp", "area" : "Witch/town-screen/buildings-area/20TZFDCK2.bmp", "hidden" : true },
+				"special2":       { "animation" : "Witch/town-screen/buildings/21TBFREXT0.def",  "x" : 0, "y" : 0, "z" : -2,   "border" : "Witch/town-screen/buildings-border/21ToFCASD.bmp", "area" : "Witch/town-screen/buildings-area/21TZFCASD.bmp" },
+				"special3":       { "animation" : "Witch/town-screen/buildings/22TBFREXT1.def",  "x" : 0,   "y" : 0, "z" :  2,   "border" : "Witch/town-screen/buildings-border/22ToFCASA.bmp", "area" : "Witch/town-screen/buildings-area/22TZFCASA.bmp" },
+				"grail":          { "animation" : "Witch/town-screen/buildings/26GRAIL.def",  "x" : 240,   "y" : 290,   "z" : -3,   "border" : "Witch/town-screen/buildings-border/26ToCSGRAIL.bmp", "area" : "Witch/town-screen/buildings-area/26TZCSGRAIL.bmp" },
+				"dwellingLvl1":   { "animation" : "Witch/town-screen/buildings/30TBFRDW_0.def",  "x" : 0, "y" : 0, "z" : 1,              "border" : "Witch/town-screen/buildings-border/30ToFGNL1.bmp", "area" : "Witch/town-screen/buildings-area/30TZFGNL1.bmp" },
+				"dwellingLvl2":   { "animation" : "Witch/town-screen/buildings/31TBFRDW_1.def",  "x" : 0, "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/31ToFLIZ1.bmp", "area" : "Witch/town-screen/buildings-area/31TZFLIZ1.bmp" },
+				"dwellingLvl3":   { "animation" : "Witch/town-screen/buildings/32TBFRDW_2.def",  "x" : 0,  "y" : 0,  "z" : -1,   "border" : "Witch/town-screen/buildings-border/32ToFgor1.bmp", "area" : "Witch/town-screen/buildings-area/32TZFgor1.bmp" },
+				"dwellingLvl4":   { "animation" : "Witch/town-screen/buildings/33TBFRDW_3.def",  "x" : 0, "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/33ToFFLY1A.bmp", "area" : "Witch/town-screen/buildings-area/33TZFFLY1A.bmp" },
+				"dwellingLvl5":   { "animation" : "Witch/town-screen/buildings/34TBFRDW_4.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/34ToFBAS1.bmp", "area" : "Witch/town-screen/buildings-area/34TZFBAS1.bmp" },
+				"dwellingLvl6":   { "animation" : "Witch/town-screen/buildings/35TBFRDW_5.def",  "x" : 0, "y" : 0, "z" : -1,   "border" : "Witch/town-screen/buildings-border/35ToFWYV1.bmp", "area" : "Witch/town-screen/buildings-area/35TZFWYV1.bmp" },
+				"dwellingLvl7":   { "animation" : "Witch/town-screen/buildings/36TBFRDW_6.def",  "x" : 0,   "y" : 0,   "z" : 1,    "border" : "Witch/town-screen/buildings-border/36ToFHYD1A.bmp", "area" : "Witch/town-screen/buildings-area/36TZFHYD1A.bmp" },
+				"dwellingUpLvl1": { "animation" : "Witch/town-screen/buildings/37TBFRUP_0.def",  "x" : 0, "y" : 0, "z" : 1,              "border" : "Witch/town-screen/buildings-border/37ToFGNL2.bmp", "area" : "Witch/town-screen/buildings-area/37TZFGNL2.bmp" },
+				"dwellingUpLvl2": { "animation" : "Witch/town-screen/buildings/38TBFRUP_1.def",  "x" : 0, "y" : 0, "z" : 1,             "border" : "Witch/town-screen/buildings-border/38ToFLIZ2.bmp", "area" : "Witch/town-screen/buildings-area/38TZFLIZ2.bmp" },			  
+				"dwellingUpLvl3": { "animation" : "Witch/town-screen/buildings/39TBFRUP_2.def",  "x" : 0,  "y" : 0,  "z" : -1,   "border" : "Witch/town-screen/buildings-border/39ToFgor2.bmp", "area" : "Witch/town-screen/buildings-area/39TZFgor2.bmp" },
+				"dwellingUpLvl4": { "animation" : "Witch/town-screen/buildings/40TBFRUP_3.def",  "x" : 0, "y" : 0, "z" : 1,              "border" : "Witch/town-screen/buildings-border/40ToFFLY2A.bmp", "area" : "Witch/town-screen/buildings-area/40TZFFLY2A.bmp" },
+				"dwellingUpLvl5": { "animation" : "Witch/town-screen/buildings/41TBFRUP_4.def",  "x" : 0, "y" : 0, "z" : 1,    "border" : "Witch/town-screen/buildings-border/41ToFBAS2.bmp", "area" : "Witch/town-screen/buildings-area/41TZFBAS2.bmp" },
+				"dwellingUpLvl6": { "animation" : "Witch/town-screen/buildings/42TBFRUP_5.def",  "x" : 0, "y" : 0, "z" : -1,   "border" : "Witch/town-screen/buildings-border/42ToFWYV2.bmp", "area" : "Witch/town-screen/buildings-area/42TZFWYV2.bmp" },
+				"dwellingUpLvl7": { "animation" : "Witch/town-screen/buildings/43TBFRUP_6.def",  "x" : 0,   "y" : 0,   "z" : 1,    "border" : "Witch/town-screen/buildings-border/43ToFHYD2A.bmp", "area" : "Witch/town-screen/buildings-area/43TZFHYD2A.bmp" }
+			}
+		}
+	}
+}

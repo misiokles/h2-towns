@@ -1,0 +1,71 @@
+{
+	"h2waalamar" :
+	{
+		"class" : "h2warlock",
+
+		"texts" :
+		{
+			"name" : "阿拉马",
+			"biography" : "在公元1000年代初期的第一次恩洛斯王位继承战争中，阿拉马勋爵率领男巫族对抗三个对手：摩格林·铁拳统治下的骑士族，拉曼达皇后领导的女巫族以及忠于屠杀者勋爵的野蛮人。阿拉马和他的对手们争夺对恩洛斯的最高控制权，相互争夺盖特韦镇，古代群岛的统治权，戈罗斯之眼和整个大陆。铁拳勋爵对他的对手们表现出深深的敬意，在男巫族归顺之后，把他昏聩的堂兄拉格纳·铁拳罚为一个乞丐。",
+			"specialty" :
+			{
+				"description" : "每升4级，野外生物加入的概率提高2%。",
+				"tooltip" : "外交术",
+				"name" : "外交术"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "warlock/heroes/16alamar/spec32.bmp",
+			"specialtyLarge" : "warlock/heroes/16alamar/skill03c.bmp",
+			"large" : "warlock/heroes/16alamar/alamar.bmp",
+			"small" : "warlock/heroes/16alamar/alamarl.bmp"
+		},
+
+		"spellbook" :
+		[
+			"dispel"
+		],
+
+
+		"army" :
+		[
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "advanced",
+				"skill" : "diplomacy"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"diplomacy" : {
+						"targetSourceType" : "SECONDARY_SKILL",
+						"type" : "WANDERING_CREATURES_JOIN_BONUS",
+						"val" : 2,
+						"valueType" : "PERCENT_TO_BASE"
+				   }
+					
+				}
+			}
+	}
+}

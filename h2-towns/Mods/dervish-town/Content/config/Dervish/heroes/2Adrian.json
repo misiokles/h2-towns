@@ -1,0 +1,51 @@
+{
+	"h2deadrian" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/2Adrian/s-spec130.bmp",
+			"specialtyLarge" : "Dervish/heroes/2Adrian/spec130.bmp",
+			"large" : "Dervish/heroes/2Adrian/HPL001PL.bmp",
+			"small" : "Dervish/heroes/2Adrian/HPS001PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "sorcery", "level": "basic" },
+			{ "skill" : "airMagic", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "艾德里安",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用攻击加速魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "攻击加速",
+				"name" : "攻击加速"
+			}
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"haste" : {
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

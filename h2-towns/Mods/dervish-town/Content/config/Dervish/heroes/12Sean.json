@@ -1,0 +1,44 @@
+{
+	"h2desean" :
+	{
+		"class" : "h2deMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/12Sean/s-spec140.bmp",
+			"specialtyLarge" : "Dervish/heroes/12Sean/spec140.bmp",
+			"large" : "Dervish/heroes/12Sean/HPL003EL.bmp",
+			"small" : "Dervish/heroes/12Sean/HPS003EL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "artillery", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "塞恩",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "弩车",
+				"name" : "弩车"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"creature" : "ballista"
+		}	
+	}
+}

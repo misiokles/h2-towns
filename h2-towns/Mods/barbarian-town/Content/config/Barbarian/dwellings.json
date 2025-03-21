@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2baDwelling1" : {
+				"name" : "茅屋",
+				"creatures" : [[ "h2balv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Barbarian/creatures/dwellings/LV1AVGgobl0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2baDwelling2" : {
+				"name" : "柴房",
+				"creatures" : [[ "h2balv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Barbarian/creatures/dwellings/LV2AVGwolf0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2baDwelling3" : {
+				"name" : "兽栏",
+				"creatures" : [[ "h2balv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Barbarian/creatures/dwellings/LV3AVCorc0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2baDwelling4" : {
+				"name" : "骸骨巢穴",
+				"creatures" : [[ "h2balv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Barbarian/creatures/dwellings/LV4AVGogre0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2baDwelling5" : {
+				"name" : "砖屋",
+				"creatures" : [[ "h2balv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Barbarian/creatures/dwellings/LV5AVGrocs0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2baDwelling6" : {
+				"name" : "桥梁",
+				"creatures" : [[ "h2balv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Barbarian/creatures/dwellings/LV6AVGcycl0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2baDwelling7" : {
+				"name" : "金字塔",
+				"creatures" : [[ "h2balv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Barbarian/creatures/dwellings/LV7AVGbhmt0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

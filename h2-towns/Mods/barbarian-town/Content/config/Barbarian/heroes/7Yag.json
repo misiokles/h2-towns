@@ -1,0 +1,59 @@
+{
+	"h2bayag" :
+	{
+		"class" : "h2baMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/7Yag/s-spec103.bmp",
+			"specialtyLarge" : "Barbarian/heroes/7Yag/spec103.bmp",
+			"large" : "Barbarian/heroes/7Yag/HPL102BR.bmp",
+			"small" : "Barbarian/heroes/7Yag/HPS102BR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "亚格",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在抵抗力上每级获得5%的奖励。",
+				"tooltip" : "抵抗奖励",
+				"name" : "抵抗力"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}				
+	}
+}

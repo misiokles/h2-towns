@@ -1,0 +1,51 @@
+{
+	"h2sotina" :
+	{
+		"class" : "h2soMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/15Tina/s-spec31.bmp",
+			"specialtyLarge" : "Sorceress/heroes/15Tina/spec31.bmp",
+			"large" : "Sorceress/heroes/15Tina/HPL030DR.bmp",
+			"small" : "Sorceress/heroes/15Tina/HPS030DR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2solv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2solv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2solv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "eagleEye", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "狄娜",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "用治疗魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "治疗",
+				"name" : "治疗"
+			}
+		},
+		"spellbook" :
+		[
+			"cure"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"cure" : {
+					"subtype" : "spell.cure",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

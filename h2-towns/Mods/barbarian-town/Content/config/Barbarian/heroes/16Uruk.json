@@ -1,0 +1,53 @@
+{
+	"h2bauruk" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/16Uruk/s-spec112.bmp",
+			"specialtyLarge" : "Barbarian/heroes/16Uruk/spec112.bmp",
+			"large" : "Barbarian/heroes/16Uruk/HPL111BM.bmp",
+			"small" : "Barbarian/heroes/16Uruk/HPS111BM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "logistics", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "乌罗克",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在后勤术上每级得到5%的额外奖励。",
+				"tooltip" : "后勤术",
+				"name" : "后勤术"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}		
+	}
+}

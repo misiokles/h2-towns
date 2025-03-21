@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2soDwelling1" : {
+				"name" : "树屋",
+				"creatures" : [[ "h2solv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Sorceress/creatures/dwellings/lv1avgcent0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2soDwelling2" : {
+				"name" : "农舍",
+				"creatures" : [[ "h2solv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Sorceress/creatures/dwellings/lv2AVGdwrf0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2soDwelling3" : {
+				"name" : "箭术靶场",
+				"creatures" : [[ "h2solv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Sorceress/creatures/dwellings/lv3AVGelfb.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2soDwelling4" : {
+				"name" : "酿酒屋",
+				"creatures" : [[ "h2solv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Sorceress/creatures/dwellings/lv4AVGpega0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2soDwelling5" : {
+				"name" : "石柱群",
+				"creatures" : [[ "h2solv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Sorceress/creatures/dwellings/lv5AVGtree0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2soDwelling6" : {
+				"name" : "篱围草地",
+				"creatures" : [[ "h2solv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Sorceress/creatures/dwellings/lv6AVG2uni.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2soDwelling7" : {
+				"name" : "红塔",
+				"creatures" : [[ "h2solv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Sorceress/creatures/dwellings/lv7AVGgdrg0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,44 @@
+{
+	"h2nelordPalmer" :
+	{
+		"class" : "h2neMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/15Lord Palmer/s-spec79.bmp",
+			"specialtyLarge" : "Necromancer/heroes/15Lord Palmer/spec79.bmp",
+			"large" : "Necromancer/heroes/15Lord Palmer/HPL078NC.bmp",
+			"small" : "Necromancer/heroes/15Lord Palmer/HPS078NC.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "offence", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "帕尔默领主",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高死亡骑士或高级死亡骑士的攻击力与防御力。",
+				"tooltip" : "死亡骑士",
+				"name" : "死亡骑士"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"creature" : "h2nelv5"
+		}	
+	}
+}

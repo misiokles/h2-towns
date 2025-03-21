@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2frDwelling1" : {
+				"name" : "稻草屋",
+				"creatures" : [[ "h2frlv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Witch/creatures/dwellings/lv1AVGGNLL0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2frDwelling2" : {
+				"name" : "蜂巢",
+				"creatures" : [[ "h2frlv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Witch/creatures/dwellings/lv2AVGdfly0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2frDwelling3" : {
+				"name" : "蜥蜴巢",
+				"creatures" : [[ "h2frlv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Witch/creatures/dwellings/lv3AVGLZRD0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2frDwelling4" : {
+				"name" : "荷花池",
+				"creatures" : [[ "h2frlv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Witch/creatures/dwellings/lv4AVGbasl0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2frDwelling5" : {
+				"name" : "螳螂巢",
+				"creatures" : [[ "h2frlv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Witch/creatures/dwellings/lv5AVGgorg0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2frDwelling6" : {
+				"name" : "地洞",
+				"creatures" : [[ "h2frlv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Witch/creatures/dwellings/lv6AVGwyvn0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2frDwelling7" : {
+				"name" : "飞龙巢",
+				"creatures" : [[ "h2frlv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Witch/creatures/dwellings/lv7AVGhyds0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

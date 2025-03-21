@@ -1,0 +1,56 @@
+{
+	"h3detimur" :
+	{
+		"class" : "h2deMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/14Timur/s-spec142.bmp",
+			"specialtyLarge" : "Dervish/heroes/14Timur/spec142.bmp",
+			"large" : "Dervish/heroes/14Timur/HPL005EL.bmp",
+			"small" : "Dervish/heroes/14Timur/HPS005EL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+		],
+		"texts" :
+		{
+			"name" : "帖木儿",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在进攻术上每级得到5%的额外奖励。",
+				"tooltip" : "进攻术",
+				"name" : "进攻术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"offence" : {
+					"subtype" : "damageTypeMelee",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,157 @@
+{
+	"felv1up2":
+	{
+		"name" :
+		{
+			"plural" : "皇家枪兵",
+			"singular" : "皇家枪兵"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 20,
+			 "max" : 30
+		},
+		"faction" : "fen",
+		"level" : 1,
+		"attack" : 6,
+		"defense" : 5,
+		"damage" :
+		{
+			 "min" : 3,
+			 "max" : 3
+		},
+		"growth" : 15,
+		"hitPoints" : 10,
+		"speed" : 6,
+		"fightValue" : 118,
+		"aiValue" : 116,
+		"cost" :
+		{
+			"gold" : 75
+		},
+		"graphics" :
+		{
+			"animation" : "fen/creatures/battle/lv1up2.def",
+			"map" : "fen/creatures/map/lv1up2map.def",
+			"iconSmall" : "fen/creatures/iconsSmall/lv1up2s.bmp",
+			"iconLarge" : "fen/creatures/iconsBig/lv1up2b.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "PIKEDFND.wav",
+			"killed": "PIKEKILL.wav",
+			"move": "PIKEMOVE.wav",
+			"wince": "PIKEWNCE.wav"
+        },
+		"abilities":
+		{
+	
+			"cavalryChargeImmunity" :
+                        {
+				"type" : "CHARGE_IMMUNITY"
+			},
+			"immunity" :
+            {
+				"subtype" : "spellSchool.air",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin", //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee",
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged",
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.blackKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.dreadKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+

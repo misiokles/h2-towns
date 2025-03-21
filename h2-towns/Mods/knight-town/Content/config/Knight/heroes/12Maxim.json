@@ -1,0 +1,52 @@
+{
+	"h2csmaxim" :
+	{
+		"class" : "h2csMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/12Maxim/s-spec12.bmp",
+			"specialtyLarge" : "Knight/heroes/12Maxim/spec12.bmp",
+			"large" : "Knight/heroes/12Maxim/HPL011CL.bmp",
+			"small" : "Knight/heroes/12Maxim/HPS011CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "sorcery", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "麦克西姆",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在魔力技能上每级得到5%的额外奖励。",
+				"tooltip" : "魔力",
+				"name" : "魔力"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

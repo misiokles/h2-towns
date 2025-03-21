@@ -1,0 +1,50 @@
+{
+	"h2baheyueshi" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/2He Yueshi/s-spec98.bmp",
+			"specialtyLarge" : "Barbarian/heroes/2He Yueshi/spec98.bmp",
+			"large" : "Barbarian/heroes/2He Yueshi/HPL097BR.bmp",
+			"small" : "Barbarian/heroes/2He Yueshi/HPS097BR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "estates", "level": "basic" },
+			{ "skill" : "armorer", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "何约什",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "+350个金币",
+				"name" : "+350个金币"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}		
+	}
+}

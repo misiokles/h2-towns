@@ -1,0 +1,135 @@
+{
+	"warlock" :
+	{
+		"name" : "男巫",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"creatureBackground" :
+		{
+			"120px" : "warlock/creature-bg-120px",
+			"130px" : "warlock/creature-bg-130px"
+		},
+		"nativeTerrain": "dirt",
+		"boat" : "boatCastle",
+		"alignment" : "evil",
+
+	
+
+		"town" :
+		{
+			"musicTheme" : ["music/warlock/theme"],
+			"defaultTavern" : 5,
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"townBackground": "warlock/town-screen/background",
+			"guildWindow": "warlock/town-screen/mage-guild",
+			"hallBackground": "TPTHBKFR",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "statue" ], [ "horde1" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				[ "h2centaur" ,"h2centaur2"],
+				[ "h2gargoyle","h2gargoyle2" ],
+				[ "h2griffin" ,"h2griffin2"],
+				[ "h2medusa" ,"h2medusa2"],
+				[ "h2mino", "h2minok" ],
+				[ "h2hydra", "h2hydra2"],				
+				[ "h2gred", "h2redd", "h2blackd" ]
+			],
+			"moatAbility" : "castleMoat",
+			"horde" : [ 0, -1 ],
+			"mageGuild" : 5,
+			"primaryResource" : "sulfur",
+			"buildingsIcons" : "warlock/town-hall.def",
+			"icons" :
+			{
+				"village" : {
+					"normal" : {
+						"small" : "warlock/icons/hall-small.bmp",
+						"large" : "warlock/icons/hall-big.bmp"
+					},
+					"built" : {
+						"small" : "warlock/icons/hall-builded-small.bmp",
+						"large" : "warlock/icons/hall-builded-big.bmp"
+					}
+				},
+				"fort" : {
+					"normal" : {
+						"small" : "warlock/icons/fort-small.bmp",
+						"large" : "warlock/icons/fort-big.bmp"
+					},
+					"built" : {
+						"small" : "warlock/icons/fort-builded-small.bmp",
+						"large" : "warlock/icons/fort-builded-big.bmp"
+					}
+				}
+			},
+
+			"mapObject" : {
+			"capitol" : "warlock/adventure-map/town-capitol",
+				"castle" :  "warlock/adventure-map/town-castle",
+				"village" : "warlock/adventure-map/town-village",
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "warlock/adventure-map/town-capitol.def" },
+					"castle" : { "animation" : "warlock/adventure-map/town-castle.def" },
+					"citadel" : { "animation" : "warlock/adventure-map/town-castle.def" },
+					"fort" : { "animation" : "warlock/adventure-map/town-castle.def" },
+					"village" : { "animation" : "warlock/adventure-map/town-village.def" }
+				}
+			},
+			"names" :
+			[
+				"乌尔卡尼亚",
+				"格瓦尔",
+				"伯劳克",
+				"阿尔玛",
+				"黑牙",
+				"阿贾瑞",
+				"布隆斯顿",
+				"布莱克本",
+				"龙牙城",
+				"卡斯提盖尔",
+				"黑分城",
+				"达克布劳",
+				"冷影城",
+				"悲伤之冠",
+				"达贡奈德",
+				"希尔沃特",
+				"达克霍德"
+			],
+
+
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 4,
+				"druid"        : 4,
+				"alchemist"    : 4,
+				"wizard"       : 4,
+				"demoniac"     : 4,
+				"heretic"      : 4,
+				"deathknight"  : 4,
+				"necromancer"  : 4,
+				"warlock"      : 6,
+				"overlord"     : 4,
+				"barbarian"    : 4,
+				"battlemage"   : 4,
+				"beastmaster"  : 4,
+				"witch"        : 4,
+				"planeswalker" : 4,
+				"elementalist" : 4,
+			}
+		}
+	}
+}

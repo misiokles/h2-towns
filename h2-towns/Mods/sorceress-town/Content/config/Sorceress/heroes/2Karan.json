@@ -1,0 +1,44 @@
+{
+	"h2sokaran" :
+	{
+		"class" : "h2soMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/2Karan/s-spec18.bmp",
+			"specialtyLarge" : "Sorceress/heroes/2Karan/spec18.bmp",
+			"large" : "Sorceress/heroes/2Karan/HPL017RN.bmp",
+			"small" : "Sorceress/heroes/2Karan/HPS017RN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2solv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2solv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2solv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "armorer", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "卡拉恩",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高妖精与高级妖精的攻击力与防御力。",
+				"tooltip" : "妖精",
+				"name" : "妖精"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2solv1"
+		}		
+	}
+}

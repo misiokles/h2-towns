@@ -1,0 +1,148 @@
+{
+	"h2wilv6up":
+	{
+		"name" :
+		{
+			"plural" : "高级祆教僧侣",
+			"singular" : "高级祆教僧侣"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "h2wizard",
+		"aiValue" : 2261,
+		"attack" : 16,
+		"shots" : 8,
+		"doubleWide" : false,
+                "cost" :
+		{
+			"gold" : 1200
+		},
+		"damage" :
+		{
+			 "max" : 25,
+			 "min" : 20
+		},
+		"defense" : 16,
+		"fightValue" : 2133,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+			"animation" : "Wizard/creatures/battle/c039umag.def",
+			"map" : "Wizard/creatures/map/lv6upmap",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS039T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs039.bmp",
+			"timeBetweenFidgets" : 1
+               },
+		"growth" : 2,
+		"hitPoints" : 100,
+		"level" : 6,
+		
+		"sound" :
+		{
+			"attack" : "UXatack.wav",
+			"defend" : "UXdefend.wav",
+			"killed" : "UXkill.wav",
+			"move"   : "UXmove.wav",
+			"wince"  : "UXwince.wav"
+		},
+		"speed" : 9,
+		"abilities":
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"manaChannel" :	
+			{
+				"type" : "MANA_CHANNELING",
+				"val" : 10	
+			},
+            "casterPrayer" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"val" : 0
+			},
+			"spellPoints" : 
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},	
+		    "spellPower" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.lightningBolt",
+				"val" : 25
+			},	
+			"lightningImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.lightningBolt",
+				"addInfo" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "LEVEL_SPELL_IMMUNITY",				
+				},
+				"values" : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}

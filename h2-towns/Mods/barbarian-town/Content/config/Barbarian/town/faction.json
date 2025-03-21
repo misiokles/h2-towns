@@ -1,0 +1,194 @@
+{
+	"h2barbarian" :
+	{
+		"name" : "野人",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "rough",
+		"boat" : "boatCastle",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "Barbarian/creature-bg-120px.bmp",
+			"130px" : "Barbarian/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "Barbarian/adventure-map/town/avcstrx0.def" },
+					"citadel" : { "animation" : "Barbarian/adventure-map/town/avcstrx0.def" },
+					"fort"    : { "animation" : "Barbarian/adventure-map/town/AVCSTRO0.def" },
+					"village" : { "animation" : "Barbarian/adventure-map/town/AVCSTRO0.def" },
+					"capitol" : { "animation" : "Barbarian/adventure-map/town/avcstrx0.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/StrongHold"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "h2baMight"    : 5,
+                "h2baMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "Barbarian/town-screen/background.bmp",
+			"guildWindow": "Barbarian/town-screen/mage-guild.bmp",
+			"buildingsIcons": "Barbarian/HALLSTRN.def",
+			"hallBackground": "Barbarian/town-screen/ZPTHBKDG.bmp",
+            "primaryResource" : "ore",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith", "special3" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special4" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special2" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" :
+			[
+				["h2balv1", "h2balv1up"],
+				["h2balv2", "h2balv2up"],
+				["h2balv3", "h2balv3up"],
+				["h2balv4", "h2balv4up"],
+				["h2balv5", "h2balv5up"],
+				["h2balv6", "h2balv6up"],
+				["h2balv7", "h2balv7up"]
+			],
+			"horde" : [ 0, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "Barbarian/icons/fort-builded-big.bmp",
+						"small" : "Barbarian/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "Barbarian/icons/fort-big.bmp", "small" : "Barbarian/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "Barbarian/icons/hall-builded-big.bmp",
+						"small" : "Barbarian/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "Barbarian/icons/hall-big.bmp", "small" : "Barbarian/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"唐达拉",
+                "威达巴",
+                "夏布朗",
+                "法斯特",
+                "西塞",
+                "山巅之城",
+                "克拉格摩尔",
+                "猪眼",
+                "特洛伊",
+                "石山城",
+                "闪沙城",
+                "思强格",
+                "龙血滩",
+                "莫甘赫姆",
+                "达贡斯拜",
+                "风斧之城",
+                "不睦之城"
+			]
+		}
+	}
+}
+

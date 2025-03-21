@@ -1,0 +1,53 @@
+{
+	"h2basolson" :
+	{
+		"class" : "h2baMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/12Solson/s-spec108.bmp",
+			"specialtyLarge" : "Barbarian/heroes/12Solson/spec108.bmp",
+			"large" : "Barbarian/heroes/12Solson/HPL107BM.bmp",
+			"small" : "Barbarian/heroes/12Solson/HPS107BM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "armorer", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "索尔松",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级获得5%的奖励。",
+				"tooltip" : "防御术",
+				"name" : "防御术"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"h2wilv3":
+	{
+		"name" :
+		{
+			"plural" : "大地精",
+			"singular" : "大地精"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "h2wizard",
+		"upgrades": ["h2wilv3up"],
+		"hasDoubleWeek": true,
+		"level" : 3,
+		"horde" : 4,
+		"attack" : 8,
+		"defense" : 3,
+		"damage" :
+		{
+			 "min" : 3,
+			 "max" : 6
+		},
+		"growth" : 7,
+		"hitPoints" : 25,
+		"speed" : 6,
+		"fightValue" : 533,
+		"aiValue" : 483,
+		"doubleWide" : false,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"graphics" :
+		{
+			"animation" : "Wizard/creatures/battle/c032gnom.def",
+			"map" : "Wizard/creatures/map/lv3map.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS032T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs032.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"abilities":
+		{
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.haste",
+				"val" : 3	
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+					
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{ 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		],
+		"sound" :
+		{
+			"attack": "GRIFATTK.wav",
+			"defend": "GRIFDFND.wav",
+			"killed": "GRIFKILL.wav",
+			"move": "GRIFMOVE.wav",
+			"wince": "GRIFWNCE.wav"
+		}
+	}
+}
+
+
+

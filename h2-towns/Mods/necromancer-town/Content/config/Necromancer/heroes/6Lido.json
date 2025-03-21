@@ -1,0 +1,58 @@
+{
+	"h2nelido" :
+	{
+		"class" : "h2neMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/6Lido/s-spec70.bmp",
+			"specialtyLarge" : "Necromancer/heroes/6Lido/spec70.bmp",
+			"large" : "Necromancer/heroes/6Lido/HPL069DK.bmp",
+			"small" : "Necromancer/heroes/6Lido/HPS069DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+		],
+		"texts" :
+		{
+			"name" : "里阿多",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用虚弱无力魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "虚弱无力",
+				"name" : "虚弱无力"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"subtype" : "spell.weakness",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

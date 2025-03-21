@@ -1,0 +1,127 @@
+{
+	"h2delv3up":
+	{
+		"name" :
+		{
+			"plural" : "高级游牧民",
+			"singular" : "高级游牧民"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "h2deMagic",
+		"hasDoubleWeek": true,
+		"aiValue" : 597,
+		"attack" : 9,
+		"doubleWide" : true,
+                "cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 9,
+		"fightValue" : 561,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "Dervish/creatures/battle/c123nomaup.def",
+			"map" : "Dervish/creatures/map/lv3upmap.def",
+			"iconSmall" : "Dervish/creatures/iconsSmall/CPrS123E.bmp",
+			"iconLarge" : "Dervish/creatures/iconsBig/cprs123.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 30,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"speed" : 13,
+		"abilities":
+		{
+			"Jousting": { "type" : "JOUSTING", "val":5 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+					
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{ 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

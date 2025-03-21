@@ -1,0 +1,194 @@
+{
+	"csknight" :
+	{
+		"name" : "骑士",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "grass",
+		"boat" : "boatCastle",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "Knight/creature-bg-120px.bmp",
+			"130px" : "Knight/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "Knight/adventure-map/town/avccasx0.def" },
+					"citadel" : { "animation" : "Knight/adventure-map/town/avccasx0.def" },
+					"fort"    : { "animation" : "Knight/adventure-map/town/avccast0.def" },
+					"village" : { "animation" : "Knight/adventure-map/town/avccast0.def" },
+					"capitol" : { "animation" : "Knight/adventure-map/town/avccasx0.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/CstleTown"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "h2csMight"    : 5,
+                "h2csMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "Knight/town-screen/background.bmp",
+			"guildWindow": "Knight/town-screen/mage-guild.bmp",
+			"buildingsIcons": "Knight/HALLCSTL.def",
+			"hallBackground": "TPTHBKCS",
+            "primaryResource" : "ore",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1" ] ],
+				[ [ "special2" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" :
+			[
+				["h2cslv1", "h2cslv1up"],
+				["h2cslv2", "h2cslv2up"],
+				["h2cslv3", "h2cslv3up"],
+				["h2cslv4", "h2cslv4up"],
+				["h2cslv5", "h2cslv5up"],
+				["h2cslv6", "h2cslv6up"],
+				["h2cslv7", "h2cslv7up"]
+			],
+			"horde" : [ 2, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "Knight/icons/fort-builded-big.bmp",
+						"small" : "Knight/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "Knight/icons/fort-big.bmp", "small" : "Knight/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "Knight/icons/hall-builded-big.bmp",
+						"small" : "Knight/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "Knight/icons/hall-big.bmp", "small" : "Knight/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"中门城",
+                "索菲高",
+                "汉普郡",
+                "钱德勒",
+                "南米尔",
+                "维丁汉姆",
+                "约克福德",
+                "谢尔曼",
+                "兰开夏",
+                "白石城",
+                "克拉克斯顿",
+                "高地城",
+                "波特什密",
+                "雄关城",
+                "唐沃尔",
+                "阿米蒂奇",
+                "梅多"
+			]
+		}
+	}
+}
+

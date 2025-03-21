@@ -1,0 +1,44 @@
+{
+	"h2sokasmetra" :
+	{
+		"class" : "h2soMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/12Kasmetra/s-spec28.bmp",
+			"specialtyLarge" : "Sorceress/heroes/12Kasmetra/spec28.bmp",
+			"large" : "Sorceress/heroes/12Kasmetra/HPL027DR.bmp",
+			"small" : "Sorceress/heroes/12Kasmetra/HPS027DR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2solv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2solv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2solv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "卡斯梅特拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高德鲁伊僧侣或高级德鲁伊僧侣的攻击力与防御力。",
+				"tooltip" : "特长: 德鲁伊僧侣和高级德鲁伊僧侣",
+				"name" : "德鲁伊僧侣",
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+		"creature" : "h2solv5"
+	    }
+	}
+}

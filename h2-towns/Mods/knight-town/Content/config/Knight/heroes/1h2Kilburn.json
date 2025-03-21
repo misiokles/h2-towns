@@ -1,0 +1,44 @@
+{
+	"h2csKilburn" :
+	{
+		"class" : "h2csMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/1Kilburn/s-spec1.bmp",
+			"specialtyLarge" : "Knight/heroes/1Kilburn/Lspec1.bmp",
+			"large" : "Knight/heroes/1Kilburn/HPL000KN.bmp",
+			"small" : "Knight/heroes/1Kilburn/HPS000KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv5", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "intelligence", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"texts" :
+		{
+			"name" : "基尔伯恩君主",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高剑士或高级剑客的攻击力与防御力。",
+				"tooltip" : "剑士和高级剑客。",
+				"name" : "剑士"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2cslv5"
+		}		
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"h2balv5":
+	{
+		"name" :
+		{
+			"plural" : "食人魔",
+			"singular" : "食人魔"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "h2barbarian",
+		"upgrades":
+		[
+			"h2balv5up"
+		],
+        "level" : 5,
+		"attack" : 12,
+		"defense" : 7,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 12
+		},
+		"growth" : 3,
+		"hitPoints" : 40,
+		"speed" : 7,
+		"shots" : 12,
+		"fightValue" : 924,
+		"aiValue" : 1009,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"graphics" :
+		{
+			"animation" : "Barbarian/creatures/battle/c092ogre.def",
+			"map" : "Barbarian/creatures/map/lv5map.def",
+			"iconSmall" : "Barbarian/creatures/iconsSmall/CPrS092S.bmp",
+			"iconLarge" : "Barbarian/creatures/iconsBig/cprs092.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		   "shield effect" :{"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",	"val" : 15  }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50 ]
+			}
+		]
+	}
+}
+

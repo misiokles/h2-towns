@@ -1,0 +1,49 @@
+{
+	"h2fralice" :
+	{
+		"class" : "h2frMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/9Alice/s-spec121.bmp",
+			"specialtyLarge" : "Witch/heroes/9Alice/spec121.bmp",
+			"large" : "Witch/heroes/9Alice/HPL120WH.bmp",
+			"small" : "Witch/heroes/9Alice/HPS120WH.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "爱丽丝",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+			"description" : "达到4级以后提高毒蛙或高级毒蛙的攻击力与防御力。",
+			"tooltip" : "毒蛙",
+			"name" : "毒蛙"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2frlv4"
+		}
+	}
+}
+
+
+

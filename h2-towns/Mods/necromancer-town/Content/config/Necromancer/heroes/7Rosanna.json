@@ -1,0 +1,51 @@
+{
+	"h2nerosanna" :
+	{
+		"class" : "h2neMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/7Rosanna/s-spec71.bmp",
+			"specialtyLarge" : "Necromancer/heroes/7Rosanna/spec71.bmp",
+			"large" : "Necromancer/heroes/7Rosanna/HPL070DK.bmp",
+			"small" : "Necromancer/heroes/7Rosanna/HPS070DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "罗珊娜",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高僵尸或高级僵尸的攻击力与防御力。",
+				"tooltip" : "僵尸",
+				"name" : "僵尸"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+		"creature" : "h2nelv2"
+	    }				
+	}
+}

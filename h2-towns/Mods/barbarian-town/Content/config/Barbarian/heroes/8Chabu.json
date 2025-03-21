@@ -1,0 +1,44 @@
+{
+	"h2bachabu" :
+	{
+		"class" : "h2baMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/8Chabu/s-spec104.bmp",
+			"specialtyLarge" : "Barbarian/heroes/8Chabu/spec104.bmp",
+			"large" : "Barbarian/heroes/8Chabu/HPL103BR.bmp",
+			"small" : "Barbarian/heroes/8Chabu/HPS103BR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "查不",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "达到4级以后提高鹰身女妖或高级鹰身女妖的攻击力与防御力。",
+				"tooltip" : "鹰身女妖",
+				"name" : "鹰身女妖"
+			}
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"specialty" : {
+		    "creature" : "h2balv6"
+	    }
+	}
+}

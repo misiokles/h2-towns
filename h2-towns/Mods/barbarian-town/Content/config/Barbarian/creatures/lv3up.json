@@ -1,0 +1,117 @@
+{
+	"h2balv3up":
+	{
+		"name" :
+		{
+			"plural" : "恶狼",
+			"singular" : "恶狼"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "h2barbarian",
+		"hasDoubleWeek": true,
+		"aiValue" : 597,
+		"attack" : 9,
+		"doubleWide" : true,
+                "cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 9,
+		"fightValue" : 561,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "Barbarian/creatures/battle/c089wolfUP.def",
+			"map" : "Barbarian/creatures/map/lv3upmap.def",
+			"iconSmall" : "Barbarian/creatures/iconsSmall/CPrS089S.bmp",
+			"iconLarge" : "Barbarian/creatures/iconsBig/cprs089.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 30,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"speed" : 9,
+		"abilities":
+		{
+			"extraAttack" :	{"type" : "ADDITIONAL_ATTACK",		"val" : 1},
+
+		    "deathStrike" :{"type" : "DOUBLE_DAMAGE_CHANCE","val" : 10}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25 ]
+			}
+		]		
+	}
+}

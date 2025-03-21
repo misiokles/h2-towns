@@ -1,0 +1,64 @@
+{
+	"h2wazoltan" :
+	{
+		"class" : "h2warlock",
+
+        "texts" :
+		{
+			"name" : "佐尔坦",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高牛头怪与高级牛头怪的攻击力与防御力。",
+				"tooltip" : "牛头怪",
+				"name" : "牛头怪"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/10Zoltan/s-spec90.bmp",
+			"specialtyLarge" : "warlock/heroes/10Zoltan/spec90.bmp",
+			"large" : "warlock/heroes/10Zoltan/HPL089WL.bmp",
+			"small" : "warlock/heroes/10Zoltan/HPS089WL.bmp"
+		},
+
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "h2mino"
+		}
+	}
+}

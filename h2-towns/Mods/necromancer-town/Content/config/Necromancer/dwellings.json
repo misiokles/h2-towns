@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2neDwelling1" : {
+				"name" : "坑道",
+				"creatures" : [[ "h2nelv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Necromancer/creatures/dwellings/lv1AVGskel0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2neDwelling2" : {
+				"name" : "墓地",
+				"creatures" : [[ "h2nelv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Necromancer/creatures/dwellings/lv2AVGzomb0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2neDwelling3" : {
+				"name" : "金字塔",
+				"creatures" : [[ "h2nelv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Necromancer/creatures/dwellings/lv3AVGwght0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2neDwelling4" : {
+				"name" : "大厦",
+				"creatures" : [[ "h2nelv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Necromancer/creatures/dwellings/lv4AVGlich1.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2neDwelling5" : {
+				"name" : "黑暗塔",
+				"creatures" : [[ "h2nelv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Necromancer/creatures/dwellings/lv5AVGvamp0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2neDwelling6" : {
+				"name" : "陵墓",
+				"creatures" : [[ "h2nelv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Necromancer/creatures/dwellings/lv6AVGbkni0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2neDwelling7" : {
+				"name" : "实验室",
+				"creatures" : [[ "h2nelv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Necromancer/creatures/dwellings/lv7AVGbone0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

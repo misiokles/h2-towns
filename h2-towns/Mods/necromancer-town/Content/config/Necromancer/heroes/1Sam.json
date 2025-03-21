@@ -1,0 +1,53 @@
+{
+	"h2nesam" :
+	{
+		"class" : "h2neMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/1Sam/s-spec65.bmp",
+			"specialtyLarge" : "Necromancer/heroes/1Sam/spec65.bmp",
+			"large" : "Necromancer/heroes/1Sam/HPL064DK.bmp",
+			"small" : "Necromancer/heroes/1Sam/HPS064DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "logistics", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"texts" :
+		{
+			"name" : "撒姆",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在后勤术上每级得到5%的额外奖励。",
+				"tooltip" : "后勤术",
+				"name" : "后勤术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

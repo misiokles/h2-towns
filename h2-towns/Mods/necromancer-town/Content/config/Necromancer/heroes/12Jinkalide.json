@@ -1,0 +1,44 @@
+{
+	"h2nejinkalide" :
+	{
+		"class" : "h2neMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/12Jinkalide/s-spec76.bmp",
+			"specialtyLarge" : "Necromancer/heroes/12Jinkalide/spec76.bmp",
+			"large" : "Necromancer/heroes/12Jinkalide/HPL075NC.bmp",
+			"small" : "Necromancer/heroes/12Jinkalide/HPS075NC.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "金卡利德",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高骷髅与高级骷髅的攻击力与防御力。",
+				"tooltip" : "骷髅",
+				"name" : "骷髅"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"creature" : "h2nelv1"
+		}	
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"h2wimira" :
+	{
+		"class" : "h2wiMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/7Mira/s-spec39.bmp",
+			"specialtyLarge" : "Wizard/heroes/7Mira/spec39.bmp",
+			"large" : "Wizard/heroes/7Mira/HPL038AL.bmp",
+			"small" : "Wizard/heroes/7Mira/HPS038AL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "sorcery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "米拉",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用霹雳寒冰魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。。",
+				"tooltip" : "霹雳寒冰。",
+				"name" : "霹雳寒冰"
+			}
+		},
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}				
+	}
+}

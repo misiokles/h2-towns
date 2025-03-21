@@ -1,0 +1,44 @@
+{
+	"h2frnia" :
+	{
+		"class" : "h2frMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/8Nia/s-spec120.bmp",
+			"specialtyLarge" : "Witch/heroes/8Nia/spec120.bmp",
+			"large" : "Witch/heroes/8Nia/HPL119BS.bmp",
+			"small" : "Witch/heroes/8Nia/HPS119BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "妮娅",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "达到3级以后提高蜥蜴人或高级蜥蜴人的攻击力与防御力。",
+				"tooltip" : "蜥蜴人",
+				"name" : "蜥蜴人"
+			}
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"specialty" : {
+			"creature" : "h2frlv3"
+		}
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"h2wilv2up":
+	{
+		"name" :
+		{
+			"plural" : "高级野猪",
+			"singular" : "高级野猪"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "h2wizard",
+		"level" : 2,
+		"attack" : 6,
+		"doubleWide" : true,
+		"defense" : 3,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 3
+		},
+		"growth" : 9,
+		"horde" : 6,
+		"hitPoints" : 10,
+		"speed" : 5,
+		"shots" : 24,
+		"fightValue" : 233,
+		"aiValue" : 240,
+		"cost" :
+		{
+			"gold" : 150
+		},
+		"graphics" :
+		{
+			"animation" : "Wizard/creatures/battle/c031boarup.def",
+			"map" : "Wizard/creatures/map/lv2upmap.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS031T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs031.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "LCRSATTK.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "LCRSKILL.wav",
+			"move": "LCRSMOVE.wav",
+			"shoot": "LCRSSHOT.wav",
+			"wince": "LCRSWNCE.wav"
+                },
+		"abilities" :
+		{
+			
+		   "shield effect" :{"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",	"val" : 5  }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

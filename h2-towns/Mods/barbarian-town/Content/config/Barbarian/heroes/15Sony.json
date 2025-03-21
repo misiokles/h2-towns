@@ -1,0 +1,44 @@
+{
+	"h2basony" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/15Sony/s-spec111.bmp",
+			"specialtyLarge" : "Barbarian/heroes/15Sony/spec111.bmp",
+			"large" : "Barbarian/heroes/15Sony/HPL110BM.bmp",
+			"small" : "Barbarian/heroes/15Sony/HPS110BM.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "eagleEye", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "索尼",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高海怪或高级海怪的攻击力与防御力。",
+				"tooltip" : "海怪",
+				"name" : "海怪"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+		    "creature" : "h2balv2"
+	    }	
+	}
+}

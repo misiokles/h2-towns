@@ -1,0 +1,55 @@
+{
+	"h2deibnfadland" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/6Ibn Fadland/s-spec134.bmp",
+			"specialtyLarge" : "Dervish/heroes/6Ibn Fadland/spec134.bmp",
+			"large" : "Dervish/heroes/6Ibn Fadland/HPL005PL.bmp",
+			"small" : "Dervish/heroes/6Ibn Fadland/HPS005PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+		],
+		"texts" :
+		{
+			"name" : "伊本法德兰",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在神秘术上每级得到5%的额外奖励。",
+				"tooltip" : "神秘术",
+				"name" : "神秘术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

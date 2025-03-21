@@ -1,0 +1,67 @@
+{
+	"name" : "h2witch",
+	"description" : "Witch town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "萨满",
+		"description" : "新城镇萨满。"
+	},
+	"factions" :
+	[
+	"config/Witch/town/buildings.json",
+	"config/Witch/town/faction.json",
+	"config/Witch/town/puzzle.json",
+	"config/Witch/town/siege.json",
+	"config/Witch/town/structures.json"
+	],
+    "creatures" :
+    [
+    "config/Witch/creatures/lv1.json",
+	"config/Witch/creatures/lv1up.json",
+	"config/Witch/creatures/lv2.json",
+	"config/Witch/creatures/lv2up.json",
+	"config/Witch/creatures/lv3.json",
+	"config/Witch/creatures/lv3up.json",
+	"config/Witch/creatures/lv4.json",
+	"config/Witch/creatures/lv4up.json",
+	"config/Witch/creatures/lv5.json",
+	"config/Witch/creatures/lv5up.json",
+	"config/Witch/creatures/lv6.json",
+	"config/Witch/creatures/lv6up.json",
+	"config/Witch/creatures/lv7.json",
+	"config/Witch/creatures/lv7up.json",
+	"config/Witch/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+	"config/Witch/classes/h2frMagic.json",
+	"config/Witch/classes/h2frMight.json"
+	 ],
+    "heroes" :
+    [
+	"config/Witch/heroes/1Xialong.json",
+	"config/Witch/heroes/2Zaiya.json",
+	"config/Witch/heroes/3Sati.json",
+	"config/Witch/heroes/4Lilith.json",
+	"config/Witch/heroes/5Wenning.json",
+	"config/Witch/heroes/6Easter.json",
+	"config/Witch/heroes/7Kemok.json",
+	"config/Witch/heroes/8Nia.json",
+	"config/Witch/heroes/9Alice.json",
+	"config/Witch/heroes/10Bond.json",
+	"config/Witch/heroes/11Grizzly.json",
+	"config/Witch/heroes/12Kaya.json",
+	"config/Witch/heroes/13Ribery.json",
+	"config/Witch/heroes/14Zanziya.json",
+	"config/Witch/heroes/15Dorika.json",
+	"config/Witch/heroes/16Maris.json"
+    ],
+    "objects" :
+    [
+    "config/Witch/dwellings.json"
+    ]
+}

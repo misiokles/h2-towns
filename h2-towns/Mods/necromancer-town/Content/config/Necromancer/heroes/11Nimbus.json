@@ -1,0 +1,57 @@
+{
+	"h2nenimbus" :
+	{
+		"class" : "h2neMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/11Nimbus/s-spec75.bmp",
+			"specialtyLarge" : "Necromancer/heroes/11Nimbus/spec75.bmp",
+			"large" : "Necromancer/heroes/11Nimbus/HPL074NC.bmp",
+			"small" : "Necromancer/heroes/11Nimbus/HPS074NC.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "尼姆巴斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用聚灵奇术魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "聚灵奇术",
+				"name" : "聚灵奇术"
+			}
+		},
+		"spellbook" :
+		[
+			"animateDead"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"animateDead" : {
+					"subtype" : "spell.animateDead",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}			
+			}
+		}		
+	}
+}

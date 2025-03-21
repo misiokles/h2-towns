@@ -1,0 +1,146 @@
+{
+	"h2delv1":
+	{
+		"name" :
+		{
+			"plural" : "流氓",
+			"singular" : "流氓"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 20,
+			 "max" : 50
+		},
+		"faction" : "h2deMagic",
+		"upgrades": ["h2delv1up"],
+		"level" : 1,
+		"attack" : 4,
+		"defense" : 1,
+		"damage" :
+		{
+			 "min" : 1,
+			 "max" : 3
+		},
+		"growth" : 24,
+		"horde" : 12,
+		"hitPoints" : 3,
+		"speed" : 7,
+		"fightValue" : 35,
+		"aiValue" : 28,
+		"cost" :
+		{
+			"gold" : 30
+		},
+		"graphics" :
+		{
+			"animation" : "Dervish/creatures/battle/c118rogu.def",
+			"map" : "Dervish/creatures/map/lv1map.def",
+			"iconSmall" : "Dervish/creatures/iconsSmall/CPrS118E.bmp",
+			"iconLarge" : "Dervish/creatures/iconsBig/cprs118.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "PIKEDFND.wav",
+			"killed": "PIKEKILL.wav",
+			"move": "PIKEMOVE.wav",
+			"wince": "PIKEWNCE.wav"
+               },
+		"abilities":
+		{
+	
+			
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin", //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "TWO_HEX_ATTACK_BREATH"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.blackKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.dreadKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+

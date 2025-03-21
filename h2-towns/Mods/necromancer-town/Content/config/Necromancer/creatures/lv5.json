@@ -1,0 +1,148 @@
+{
+	"h2nelv5":
+	{
+		"name" :
+		{
+			"plural" : "死亡骑士",
+			"singular" : "死亡骑士"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "h2necromancer",
+		"upgrades":
+		[
+			"h2nelv5up"
+		],
+        "level" : 5,
+		"attack" : 12,
+		"defense" : 7,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 12
+		},
+		"growth" : 3,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"shots" : 12,
+		"fightValue" : 924,
+		"aiValue" : 1009,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"graphics" :
+		{
+			"animation" : "Necromancer/creatures/battle/c064dknt.def",
+			"map" : "Necromancer/creatures/map/lv5map.def",
+			"iconSmall" : "Necromancer/creatures/iconsSmall/CPrS064N.bmp",
+			"iconLarge" : "Necromancer/creatures/iconsBig/cprs064.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile" : "CPRZEAX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},	
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		   "undead" :
+		    {
+			   "type" : "UNDEAD"
+		    },
+		   "extraRetaliation" :{"type" : "ADDITIONAL_RETALIATION","val" : 1},
+		   "curses" :{"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.curse","val" : 20},
+		   "regeneration" : { "type" : "HP_REGENERATION", "val" : 30 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+					"val" : 45
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33]
+			}
+		]	
+	}
+}
+

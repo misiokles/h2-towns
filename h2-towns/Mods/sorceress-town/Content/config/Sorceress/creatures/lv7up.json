@@ -1,0 +1,126 @@
+{
+	"h2solv7up" : {
+		"advMapAmount" : {"max" : 8, "min" : 3},
+		"aiValue" : 6925,
+		"attack" : 23,
+		"cost" : { "gold" : 3000, "mercury" : 2 },
+		"damage" : {"max" : 45, "min" : 25},
+		"defense" : 25,
+		"faction" : "h2sorceress",
+		"fightValue" : 5454,
+		"graphics" : {
+			"animation" : "Sorceress/creatures/battle/c027phnxup.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 0.8 },
+			"map" : "Sorceress/creatures/map/lv7upmap.def",
+			"iconSmall" : "Sorceress/creatures/iconsSmall/CPrS027R.bmp",
+			"iconLarge" : "Sorceress/creatures/iconsBig/cprs027.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 1,
+		"hitPoints" : 225,
+		"speed" : 11,
+                "doubleWide" : true,
+		"level" : 7,
+		"name" : { "plural" : "神圣凤凰", "singular" : "神圣凤凰" },
+		"sound" :
+		{
+			"attack" : "TempATTK.wav",
+			"defend" : "TempDFND.wav",
+			"killed" : "TempDEAD.wav",
+			"move" : "TempMOVE.wav",
+			"wince" : "TempWNCE.wav"
+		} ,
+		"abilities":
+		{
+			
+                        "reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 50
+			},
+			"flamethrower" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"firstStrike" :
+			{
+				"type" : "FIRST_STRIKE"
+			},
+			"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+			"rebirth" : {"type" : "REBIRTH","val" : 20},
+		   "canFly" : {	"type" : "FLYING"	}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.prayer",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.bless",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		]	
+	}
+}

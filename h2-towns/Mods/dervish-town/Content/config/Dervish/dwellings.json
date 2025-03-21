@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2deDwelling1" : {
+				"name" : "贼窝",
+				"creatures" : [[ "h2delv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Dervish/creatures/dwellings/lv1AVGpixie.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2deDwelling2" : {
+				"name" : "寺院",
+				"creatures" : [[ "h2delv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Dervish/creatures/dwellings/lv2AVGelp.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2deDwelling3" : {
+				"name" : "帐篷",
+				"creatures" : [[ "h2delv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Dervish/creatures/dwellings/lv3AVG2ela.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2deDwelling4" : {
+				"name" : "礼拜堂",
+				"creatures" : [[ "h2delv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Dervish/creatures/dwellings/lv4AVG2ele.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2deDwelling5" : {
+				"name" : "深渊",
+				"creatures" : [[ "h2delv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Dervish/creatures/dwellings/lv5AVG2elf.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2deDwelling6" : {
+				"name" : "古墓",
+				"creatures" : [[ "h2delv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Dervish/creatures/dwellings/lv6AVG2elw.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2deDwelling7" : {
+				"name" : "祈愿神坛",
+				"creatures" : [[ "h2delv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Dervish/creatures/dwellings/lv7AVGfbrd.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

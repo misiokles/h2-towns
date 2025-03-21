@@ -1,0 +1,137 @@
+{
+	"h2frlv5up":
+	{
+		"name" :
+		{
+			"plural" : "高级螳螂",
+			"singular" : "高级螳螂"
+		},
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 8
+		},
+		"faction" : "h2witch",
+        "level" : 5,
+		"attack" : 12,
+		"doubleWide" : true,
+		"defense" : 10,
+		"damage" :
+		{
+			 "min" : 10,
+			 "max" : 12
+		},
+		"growth" : 3,
+		"hitPoints" : 40,
+		"speed" : 13,
+		"shots" : 24,
+		"fightValue" : 1064,
+		"aiValue" : 1185,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"graphics" :
+		{
+			"animation" : "Witch/creatures/battle/c107mtisup.def",
+			"map" : "Witch/creatures/map/lv5upmap.def",
+			"iconSmall" : "Witch/creatures/iconsSmall/CPrS107.bmp",
+			"iconLarge" : "Witch/creatures/iconsBig/cprs107.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "ZELTATTK.wav",
+			"defend": "ZELTDFND.wav",
+			"killed": "ZELTKILL.wav",
+			"move": "ZELTMOVE.wav",
+			"shoot": "ZELTSHOT.wav",
+			"wince": "ZELTWNCE.wav"
+               },
+		"abilities" :
+		{
+			
+		   "flying" :
+			{
+				"type" : "FLYING"			
+			},
+			"noRetalitation" :	
+			{
+				"type" : "BLOCKS_RETALIATION"
+			},
+		    "poisonImm" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.poison",
+				"addInfo" : 0
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+					"val" : 45
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33]
+			}
+		]	
+	}
+}
+
+

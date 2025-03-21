@@ -1,0 +1,47 @@
+{
+	"h2baatlas" :
+	{
+		"class" : "h2baMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/6Atlas/s-spec102.bmp",
+			"specialtyLarge" : "Barbarian/heroes/6Atlas/spec102.bmp",
+			"large" : "Barbarian/heroes/6Atlas/HPL101BR.bmp",
+			"small" : "Barbarian/heroes/6Atlas/HPS101BR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"texts" :
+		{
+			"name" : "阿特拉斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高索尔巨人或高级索尔巨人的攻击力与防御力。",
+				"tooltip" : "索尔巨人",
+				"name" : "索尔巨人"
+			}
+		},
+		"specialty" : {
+		    "creature" : "h2balv6"
+	    }
+	}
+}

@@ -1,0 +1,94 @@
+{
+	"h2medusa2":
+	{
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"faction" : "warlock",
+		"special" : true,
+		"aiValue" : 1000,
+		"attack" : 19,
+		"cost" :
+		{
+			"gold" : 2000
+		},
+		"damage" :
+		{
+			 "max" : 19,
+			 "min" : 10
+		},
+		"defense" : 15,
+		"fightValue" : 1000,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/c077bhldup.DEF",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lv6upmap.def",
+			"iconSmall" : "warlock/iconsSmall/CPrS077D.bmp",
+			"iconLarge" : "warlock/iconsBig/cprs077.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"doubleWide" : true,
+		"growth" : 2,
+		"hitPoints" : 50,
+		"level" : 6,
+		"name" : { "plural" : "高级邪眼", "singular" : "高级邪眼" },
+		"sound" :
+		{
+			"attack": "MEDUATTK.wav",
+			"defend": "MEDUDFND.wav",
+			"killed": "MEDUKILL.wav",
+			"move": "MEDUMOVE.wav",
+			"wince": "MEDUWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 50
+			},
+			"petrifyImmunity" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.stoneGaze",
+				"addInfo" : 1
+			},
+			"increaseManaCost" :
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val" : 3
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 10
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			}
+		}
+	}
+	}

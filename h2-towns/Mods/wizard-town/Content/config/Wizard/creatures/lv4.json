@@ -1,0 +1,120 @@
+{
+	"h2wilv4":
+	{
+		"name" :
+		{
+			"plural" : "铁机器人",
+			"singular" : "铁机器人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"faction" : "h2wizard",
+		"upgrades": ["h2wilv4up"],
+		"level" : 4,
+		"attack" : 10,
+		"defense" : 12,
+		"damage" :
+		{
+			 "min" : 6,
+			 "max" : 9
+		},
+		"growth" : 4,
+		"hitPoints" : 35,
+		"speed" : 7,
+		"fightValue" : 680,
+		"aiValue" : 668,
+		"cost" :
+		{
+			"gold" : 300
+		},
+		"graphics" :
+		{
+			"animation" : "Wizard/creatures/battle/c034golm.def",
+			"map" : "Wizard/creatures/map/lv4map.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS034T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs034.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "SWRDATTK.wav",
+			"defend": "SWRDDFND.wav",
+			"killed": "SWRDKILL.wav",
+			"move": "SWRDMOVE.wav",
+			"wince": "SWRDWNCE.wav"
+		},
+		"abilities":
+		{
+			"magicResistance" :{"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any","val" : 20}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]	
+	}
+}
+

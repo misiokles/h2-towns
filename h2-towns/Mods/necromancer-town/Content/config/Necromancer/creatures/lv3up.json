@@ -1,0 +1,136 @@
+{
+	"h2nelv3up":
+	{
+		"name" :
+		{
+			"plural" : "高级木乃伊",
+			"singular" : "高级木乃伊"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "h2necromancer",
+		"hasDoubleWeek": true,
+		"aiValue" : 597,
+		"attack" : 9,
+		"doubleWide" : false,
+                "cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 9,
+		"fightValue" : 561,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "Necromancer/creatures/battle/c061umum.def",
+			"map" : "Necromancer/creatures/map/lv3upmap.def",
+			"iconSmall" : "Necromancer/creatures/iconsSmall/CPrS061N.bmp",
+			"iconLarge" : "Necromancer/creatures/iconsBig/cprs061.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 7,
+		"hitPoints" : 30,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"speed" : 7,
+		"abilities":
+		{
+			"undead" :
+		    {
+			   "type" : "UNDEAD"
+		    },
+			"paralize" :{"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paralyze","val" : 30},
+
+		    "paralyzeImm" :{"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.paralyze","addInfo" : 0},
+		    "regeneration" : { "type" : "HP_REGENERATION", "val" : 15 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+					
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{ 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

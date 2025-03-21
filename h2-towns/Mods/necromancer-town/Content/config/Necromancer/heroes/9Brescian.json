@@ -1,0 +1,60 @@
+{
+	"h2nebrescian" :
+	{
+		"class" : "h2neMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/9Brescian/s-spec73.bmp",
+			"specialtyLarge" : "Necromancer/heroes/9Brescian/spec73.bmp",
+			"large" : "Necromancer/heroes/9Brescian/HPL072NC.bmp",
+			"small" : "Necromancer/heroes/9Brescian/HPS072NC.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "布莱施修士",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用死亡波纹魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。。",
+				"tooltip" : "死亡波纹",
+				"name" : "死亡波纹"
+			}
+		},
+		"spellbook" :
+		[
+			"deathRipple"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"deathRipple" : {
+					"subtype" : "spell.deathRipple",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+
+
+

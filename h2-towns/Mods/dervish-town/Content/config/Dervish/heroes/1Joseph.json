@@ -1,0 +1,51 @@
+{
+	"h2dejoseph" :
+	{
+		"class" : "h2deMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/1Joseph/s-spec129.bmp",
+			"specialtyLarge" : "Dervish/heroes/1Joseph/spec129.bmp",
+			"large" : "Dervish/heroes/1Joseph/HPL000PL.bmp",
+			"small" : "Dervish/heroes/1Joseph/HPS000PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "intelligence", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "fireball"
+		],
+		"texts" :
+		{
+			"name" : "约瑟夫",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用连珠火球魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "连珠火球",
+				"name" : "连珠火球"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"subtype" : "spell.fireball",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

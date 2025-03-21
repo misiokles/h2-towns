@@ -1,0 +1,51 @@
+{
+	"h2wimarini" :
+	{
+		"class" : "h2wiMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/8Marini/s-spec40.bmp",
+			"specialtyLarge" : "Wizard/heroes/8Marini/spec40.bmp",
+			"large" : "Wizard/heroes/8Marini/HPL039AL.bmp",
+			"small" : "Wizard/heroes/8Marini/HPS039AL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "马里尼",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "使用连珠火球魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "连珠火球",
+				"name" : "连珠火球"
+			}
+		},
+		"spellbook" :
+		[
+			"fireball"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"fireball" : {
+					"subtype" : "spell.fireball",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

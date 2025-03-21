@@ -1,0 +1,154 @@
+{
+	"h2solv4up":
+	{
+		"name" :
+		{
+			"plural" : "高级半羊人",
+			"singular" : "高级半羊人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "h2sorceress",
+		"level" : 4,
+		"attack" : 12,
+		"defense" : 10,
+		"damage" :
+		{
+			 "min" : 7,
+			 "max" : 10
+		},
+		"growth" : 4,
+		"hitPoints" : 40,
+		"speed" : 7,
+		"fightValue" : 760,
+		"aiValue" : 764,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"graphics" :
+		{
+			"animation" : "Sorceress/creatures/battle/c021ustyr.def",
+			"map" : "Sorceress/creatures/map/lv4upmap.def",
+			"iconSmall" : "Sorceress/creatures/iconsSmall/CPrS021R.bmp",
+			"iconLarge" : "Sorceress/creatures/iconsBig/cprs021.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+	   "abilities":
+		{
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			},
+			"extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+		    "bindImm" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.bind",
+				"addInfo" : 0
+			}	
+		},
+		"sound" :
+		{
+			"attack": "CRUSATTK.wav",
+			"defend": "CRUSDFND.wav",
+			"killed": "CRUSKILL.wav",
+			"move": "CRUSMOVE.wav",
+			"wince": "CRUSWNCE.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.weakness",
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.mirth"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 2 ]
+			}
+		]
+	}
+}
+
+
+

@@ -1,0 +1,44 @@
+{
+	"h2frkaya" :
+	{
+		"class" : "h2frMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/12Kaya/s-spec124.bmp",
+			"specialtyLarge" : "Witch/heroes/12Kaya/spec124.bmp",
+			"large" : "Witch/heroes/12Kaya/HPL123WH.bmp",
+			"small" : "Witch/heroes/12Kaya/HPS123WH.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "卡雅",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到6级以后提高树人或高级树人的攻击力与防御力。",
+				"tooltip" : "树人",
+				"name" : "树人"
+			}
+		},
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"specialty" : {
+			"creature" : "h2frlv6"
+		}	
+	}
+}

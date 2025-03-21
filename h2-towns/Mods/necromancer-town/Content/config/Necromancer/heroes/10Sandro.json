@@ -1,0 +1,51 @@
+{
+	"h2nesandro" :
+	{
+		"class" : "h2neMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/10Sandro/s-spec74.bmp",
+			"specialtyLarge" : "Necromancer/heroes/10Sandro/spec74.bmp",
+			"large" : "Necromancer/heroes/10Sandro/HPL073NC.bmp",
+			"small" : "Necromancer/heroes/10Sandro/HPS073NC.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "sorcery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "桑德罗",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "在魔力技能上每级得到5%的额外奖励。",
+				"tooltip" : "魔力",
+				"name" : "魔力"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+        "specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}	
+	}
+}

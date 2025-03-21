@@ -1,0 +1,150 @@
+{
+	"h2frlv2":
+	{
+		"name" :
+		{
+			"plural" : "毒蜂",
+			"singular" : "毒蜂"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "h2witch",
+		"upgrades": ["h2frlv2up"],
+		"level" : 2,
+		"attack" : 6,
+		"defense" : 3,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 3
+		},
+		"growth" : 9,
+		"hitPoints" : 10,
+		"speed" : 12,
+		"shots" : 24,
+		"fightValue" : 223,
+		"aiValue" : 220,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"graphics" :
+		{
+			"animation" : "Witch/creatures/battle/c100wasp.def",
+			"map" : "Witch/creatures/map/lv2map.def",
+			"iconSmall" : "Witch/creatures/iconsSmall/CPrS100F.bmp",
+			"iconLarge" : "Witch/creatures/iconsBig/cprs100.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "LCRSATTK.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "LCRSKILL.wav",
+			"move": "LCRSMOVE.wav",
+			"shoot": "LCRSSHOT.wav",
+			"wince": "LCRSWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		   "flying" :
+			{
+				"type" : "FLYING"			
+			},
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 30
+			},
+		   "dispellHelpful" :
+		    {
+			   "type" : "SPELL_AFTER_ATTACK",
+			   "addInfo" : [0,2],
+			   "subtype" : "spell.dispelHelpful",
+			   "val" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

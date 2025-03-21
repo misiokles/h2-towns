@@ -1,0 +1,73 @@
+{
+	"name" : "h2necromancer",
+	"description" : "Necromancer town",
+	"author": "menzhiyuan",
+	"version" : "0.1",
+	"contact": "https://vk.com/",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "亡灵巫师",
+		"description" : "新城镇亡灵巫师。"
+	},
+	"factions" :
+	[
+		"config/Necromancer/town/buildings.json",
+		"config/Necromancer/town/faction.json",
+		"config/Necromancer/town/puzzle.json",
+		"config/Necromancer/town/siege.json",
+		"config/Necromancer/town/structures.json"
+	],
+    "creatures" :
+    [
+		"config/Necromancer/creatures/lv1.json",
+		"config/Necromancer/creatures/lv1up.json",
+		"config/Necromancer/creatures/lv2.json",
+		"config/Necromancer/creatures/lv2up.json",
+		"config/Necromancer/creatures/lv3.json",
+		"config/Necromancer/creatures/lv3up.json",
+		"config/Necromancer/creatures/lv4.json",
+		"config/Necromancer/creatures/lv4up.json",
+		"config/Necromancer/creatures/lv5.json",
+		"config/Necromancer/creatures/lv5up.json",
+		"config/Necromancer/creatures/lv6.json",
+		"config/Necromancer/creatures/lv6up.json",
+		"config/Necromancer/creatures/lv7.json",
+		"config/Necromancer/creatures/lv7up.json",
+		"config/Necromancer/creatures/commander.json"
+    ],
+	"heroClasses" :
+	[
+		"config/Necromancer/classes/h2neMagic.json",
+		"config/Necromancer/classes/h2neMight.json"
+	 ],
+    "heroes" :
+    [
+		"config/Necromancer/heroes/1Sam.json",
+		"config/Necromancer/heroes/2Cuom.json",
+		"config/Necromancer/heroes/3Xialvti.json",
+		"config/Necromancer/heroes/4Lanlu.json",
+		"config/Necromancer/heroes/5Dalana.json",
+		"config/Necromancer/heroes/6Lido.json",
+		"config/Necromancer/heroes/7Rosanna.json",
+		"config/Necromancer/heroes/8Seria.json",
+		"config/Necromancer/heroes/9Brescian.json",
+		"config/Necromancer/heroes/10Sandro.json",
+		"config/Necromancer/heroes/11Nimbus.json",
+		"config/Necromancer/heroes/12Jinkalide.json",
+		"config/Necromancer/heroes/13Vandora.json",
+		"config/Necromancer/heroes/14Gaius.json",
+		"config/Necromancer/heroes/15Lord Palmer.json",
+		"config/Necromancer/heroes/16Mephista.json"
+    ],
+    "objects" :
+    [
+		"config/Necromancer/dwellings.json"
+    ],
+	"skills" : [
+		"config/Necromancer/skills/ne_nnecromancy"
+	],
+	"spells" : [
+		"config/Necromancer/spells/nec05eff.json"
+	]
+}

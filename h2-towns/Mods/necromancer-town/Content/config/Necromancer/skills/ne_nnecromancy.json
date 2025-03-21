@@ -1,0 +1,58 @@
+{
+	"ne_nnecromancy" : {
+		"name" : "中古召魂术",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "UNDEAD_RAISE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER"
+				},
+				"power" : {
+					"type" : "IMPROVED_NECROMANCY",
+					"subtype" : "creature.h2nelv1",
+					"addInfo" : 0
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small" : "Necromancer/skills/smallBasic",
+				"medium" : "Necromancer/skills/mediumBasic",
+				"large" : "Necromancer/skills/largeBasic"
+			},
+			"description" : "{初级中古召魂术}\n\n初级中古召魂术可以将阵亡生物的10%转换为骷髅。",
+			"effects" : {
+				"main" : { "val" : 10 },
+				"power" : { "val" : 1 }
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "Necromancer/skills/smallAdvanced",
+				"medium" : "Necromancer/skills/mediumAdvanced",
+				"large" : "Necromancer/skills/largeAdvanced"
+			},
+			"description" : "{中级中古召魂术}\n\n中级中古召魂术可以将阵亡生物的20%转换为骷髅。",
+			"effects" : {
+				"main" : { "val" : 20 },
+				"power" : { "val" : 2 }
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "Necromancer/skills/smallExpert",
+				"medium" : "Necromancer/skills/mediumExpert",
+				"large" : "Necromancer/skills/largeExpert"
+			},
+			"description" : "{高级中古召魂术}\n\n高级中古召魂术可以将阵亡生物的30%转换为骷髅。",
+			"effects" : {
+				"main" : { "val" : 30 },
+				"power" : { "val" : 3 }
+			}
+		}
+	}
+}

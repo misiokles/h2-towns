@@ -1,0 +1,50 @@
+{
+	"h2dejacquenas" :
+	{
+		"class" : "h2deMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/5Jacquenas/s-spec133.bmp",
+			"specialtyLarge" : "Dervish/heroes/5Jacquenas/spec133.bmp",
+			"large" : "Dervish/heroes/5Jacquenas/HPL004PL.bmp",
+			"small" : "Dervish/heroes/5Jacquenas/HPS004PL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[       
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "贾克纳斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高游牧民或高级游牧民的攻击力与防御力。",
+                "tooltip" : "游牧民",
+                "name" : "游牧民"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+		"creature" : "h2delv3"
+	}
+  }
+}

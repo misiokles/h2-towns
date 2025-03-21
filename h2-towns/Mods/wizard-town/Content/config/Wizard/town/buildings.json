@@ -1,0 +1,526 @@
+{
+	"h2wizard" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+					"id" : 0
+				},
+				"mageGuild2" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 4,
+						"mercury" : 4,
+						"ore" : 4,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"id" : 1,
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 6,
+						"sulfur" : 5,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"id" : 2,
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 8,
+						"sulfur" : 5,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"id" : 3,
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 10,
+						"ore" : 5,
+						"sulfur" : 10,
+						"crystal" : 10,
+						"gems" : 10,
+						"gold" : 1000
+					},
+					"id" : 4,
+					"upgrades" : "mageGuild4"	
+                },	
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 5
+				},
+				"shipyard" :
+				{
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					},
+					"id" : 6
+				},		
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"id" : 7
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"id" : 8,
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"gold" : 5000,
+						"wood" : 10,
+						"ore" : 10
+					},
+					"id" : 9,
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"id" : 10,
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"id" : 11,
+					"requires" : [ "tavern"],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", ["mageGuild1"], ["marketplace"], ["blacksmith"] ],
+					"id" : 12,
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"id" : 13,
+					"requires" : ["castle"] ,
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 14
+				},
+				"resourceSilo" :
+				{
+					"name" : "物资仓库",
+					"description" : "物资仓库每天为你额外提供1宝石。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"produce": { "gems": 1 },
+					"requires" : ["marketplace"],
+					"id" : 15
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供弩车。",
+					"name" : "铁匠铺",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"warMachine" : "ballista",
+					"id" : 16
+				},
+				"special1" : 
+				{
+					"description" : "只需支付少量费用，你就可以从宝物商店购买宝物。",
+					"name" : "宝物商店",
+					"cost" : 
+					{
+                        "wood" : 20,
+						"gold" : 2000
+					},
+					"marketModes" : ["resource-artifact", "artifact-resource"],
+					"requires" : ["mageGuild1"],
+					"id" : 17
+				},
+				"horde1" :
+				{
+					"description" : "果园使野猪和高级野猪的周产量+6。",
+					"name" : "果园",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"id" : 18,
+					"upgrades" : "dwellingLvl2"	
+				},
+				"horde1Upgr" :
+				{
+					"description" : "果园使野猪和高级野猪的周产量+6。",
+					"name" : "果园",
+					"cost" : 
+					{
+						"gold" : 1000
+					},
+					"requires" : ["horde1"],
+					"id" : 19,
+					"upgrades" : "dwellingUpLvl2",
+					"mode" : "auto"
+				},
+				"ship" :
+				{
+					"name" : "船只",
+					"description" : "船员们正在等待起航。",
+					"id" : 20
+				},
+				"special2" : 
+				{
+					"description" : "了望塔可扩大城镇周围的可视范围。",
+					"name" : "了望塔",
+					"cost" : 
+					{
+                        "wood" : 20,
+						"gold" : 2000
+					},
+					"height" : "high",
+					"requires" : ["mageGuild1"],
+					"id" : 21
+				},
+				"special3" :
+				{
+					"description" : "图书馆为魔法行会增加魔法。",
+					"name" : "图书馆",
+					"cost" :
+					{
+						"wood"    : 10,
+						"gold" : 2000
+					},
+					"type" : "library",
+					"requires" : ["dwellingLvl4"],
+					"id" : 22
+				},	
+				"special4" :
+				{
+					"description" : "雕像使每个来访英雄的知识+1。",
+					"name" : "雕像",
+					"cost" :
+					{
+						"wood"    : 10,
+						"gold" : 2000
+					},
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.581",
+								"primary" : { "knowledge" : 1 }
+							}
+						]
+					},
+					"requires" : ["dwellingLvl4"],
+					"id" : 23
+				},	
+				"grail" :
+				{
+                    "description" : "奇迹蘑菇使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，并使来访后的英雄获得每天100魔法值的恢复速度。",	
+					"name" : "奇迹蘑菇",
+					"id" : 26,
+					"produce": { "gold": 5000 },
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "奇迹蘑菇使来访后的英雄获得每天100魔法值的恢复速度。",
+								"bonuses" : [ { "duration": "PERMANENT", "type": "MANA_REGENERATION", "val": 100, "propagator": "PLAYER_PROPAGATOR" } ]
+							}
+						]
+					},
+					"mode" : "grail"
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "繁殖地允许你招募侏儒。",
+					"name" : "繁殖地",
+					"cost" : 
+					{
+						"gold" : 500,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "fort" ],
+					"id" : 30
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "牲畜栏允许你招募野猪。",
+					"name" : "牲畜栏",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"requires" : [ "dwellingLvl1" ],
+					"id" : 31
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "蘑菇房允许你招募大地精。",
+					"name" : "蘑菇房",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"requires" :["allOf", ["dwellingLvl4"], ["fort"] ],
+					"id" : 32
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "铸造厂允许你招募铁机器人。",
+					"name" : "铸造厂",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5
+					},
+					"requires" : [ "allOf", [ "blacksmith" ], [ "dwellingLvl1" ] ],
+					"id" : 33
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "峭壁巢穴允许你招募大雕。",
+					"name" : "峭壁巢穴",
+					
+					"cost" : 
+					{
+						"gold" : 3000,
+						"wood" : 5,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 5,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "dwellingLvl4" ] ],
+					"id" : 34
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "象牙塔允许你招募祆教僧侣。",
+					"name" : "象牙塔",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"wood" : 20
+					},
+					"requires" : [ "special2" ],
+					"id" : 35
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "云间城堡允许你招募泰坦巨人。",
+					"name" : "云间城堡",
+					"cost" : 
+					{
+						"wood" : 5,
+						"gems" : 5,
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6"], ["mageGuild2"]],
+					"id" : 36
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "升级繁殖地允许你招募高级侏儒。",
+					"name" : "升级繁殖地",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"id" : 37,
+					"requires" :   ["fort"],
+					"upgrades" : "dwellingLvl1"
+				},
+				
+				"dwellingUpLvl2" :
+				{
+					"description" : "升级牲畜栏允许你招募高级野猪。",
+					"name" : "升级牲畜栏",
+					"cost" :
+					{
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"id" : 38,
+					"upgrades" : "dwellingLvl2"
+				},				
+				"dwellingUpLvl3" :
+				{
+					"description" : "升级蘑菇房允许你招募高级大地精。",
+					"name" : "升级蘑菇房",
+					"cost" : 
+					{
+						"gold" : 1000,
+						"ore" : 5
+					},
+					"id" : 39,		
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "升级铸造厂允许你招募钢机器人。",
+					"name" : "升级铸造厂",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"ore" : 5,
+						"crystal" : 5
+					},
+					"id" : 40,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					
+					"description" : "升级峭壁巢穴允许你招募高级大雕。",
+					"name" : "升级峭壁巢穴",
+					"cost" : 
+					{
+						"wood" : 2,
+						"gold" : 1000,
+						"ore" : 2,
+						"gems" : 2,
+						"sulfur" : 2,
+						"mercury" : 2,
+						"crystal" : 2
+					},
+					"id" : 41,
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "升级象牙塔允许你招募高级祆教僧侣。",
+					"name" : "升级象牙塔",
+					"cost" : 
+					{	
+						"gold" : 3000,
+						"wood" : 10
+					},
+					"id" : 42,
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "升级云间城堡允许你招募泰坦高级巨人。",
+					"name" : "升级云间城堡",
+					"cost" : 
+					{
+						"wood" : 5,
+						"gems" : 5,
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"id" : 43,
+					"upgrades" : "dwellingLvl7"
+				}
+			}
+		}
+	}
+}

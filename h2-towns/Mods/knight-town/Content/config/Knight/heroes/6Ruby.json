@@ -1,0 +1,58 @@
+{
+	"h2csruby" :
+	{
+		"class" : "h2csMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/6Ruby/s-spec6.bmp",
+			"specialtyLarge" : "Knight/heroes/6Ruby/spec6.bmp",
+			"large" : "Knight/heroes/6Ruby/HPL005KN.bmp",
+			"small" : "Knight/heroes/6Ruby/HPS005KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			},
+		],
+		"spellbook" :
+		[
+			"bless"
+		],
+		"texts" :
+		{
+			"name" : "鲁比",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用圣灵佑佐魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "圣灵佑佐",
+				"name" : "圣灵佑佐"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"bless" : {
+					"subtype" : "spell.bless",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"h2cskristian" :
+	{
+		"class" : "h2csMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/13Kristian/s-spec13.bmp",
+			"specialtyLarge" : "Knight/heroes/13Kristian/spec13.bmp",
+			"large" : "Knight/heroes/13Kristian/HPL012CL.bmp",
+			"small" : "Knight/heroes/13Kristian/HPS012CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2cslv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2cslv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "克里斯田",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "炮术 Bonus: 弩车",
+				"name" : "弩车",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "ballista"
+		}		
+	}
+}

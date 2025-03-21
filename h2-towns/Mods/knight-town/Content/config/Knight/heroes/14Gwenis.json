@@ -1,0 +1,47 @@
+{
+	"h2csgwenis" :
+	{
+		"class" : "h2csMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/14Gwenis/s-spec14.bmp",
+			"specialtyLarge" : "Knight/heroes/14Gwenis/spec14.bmp",
+			"large" : "Knight/heroes/14Gwenis/HPL013CL.bmp",
+			"small" : "Knight/heroes/14Gwenis/HPS013CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "格温尼丝",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到2级以后提高弓箭手或高级箭手的攻击力与防御力。。",
+				"tooltip" : "弓箭手和高级箭手。",
+				"name" : "弓箭手"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2cslv2"
+		}		
+	}
+}

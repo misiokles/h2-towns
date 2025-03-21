@@ -1,0 +1,171 @@
+{
+	"h2wilv1up":
+	{
+		"name" :
+		{
+			"plural" : "高级侏儒",
+			"singular" : "高级侏儒"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 20,
+			 "max" : 40
+		},
+		"faction" : "h2wizard",
+		"level" : 1,
+		"attack" : 6,
+		"defense" : 5,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 3
+		},
+		"growth" : 15,
+		"horde" : 4,
+		"hitPoints" : 10,
+		"shots" : 24,
+		"speed" : 5,
+		"fightValue" : 118,
+		"aiValue" : 116,
+		"cost" :
+		{
+			"gold" : 75
+		},
+		"graphics" :
+		{
+			"animation" : "Wizard/creatures/battle/c029hlfgup.def",
+			"map" : "Wizard/creatures/map/lv1upmap.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS029T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs029.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"attackClimaxFrame" : 8,
+				"projectile": "PHALF.DEF",
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "PIKEDFND.wav",
+			"killed": "PIKEKILL.wav",
+			"move": "PIKEMOVE.wav",
+			"wince": "PIKEWNCE.wav"
+               },
+		"abilities":
+		{
+	
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			
+			},
+			"halfShoot" :{"type" : "LIMITED_SHOOTING_RANGE","val": 10}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin", //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeMelee",
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeRanged",
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.blackKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.dreadKnight"
+				},
+				"values" : [ 0, 0, 20, 20, 30, 30, 40, 40, 50, 60 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+

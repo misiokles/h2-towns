@@ -1,0 +1,135 @@
+{
+	"h2wilv4up":
+	{
+		"name" :
+		{
+			"plural" : "钢机器人",
+			"singular" : "钢机器人"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "h2wizard",
+		"level" : 4,
+		"attack" : 12,
+		"defense" : 12,
+		"damage" :
+		{
+			 "min" : 7,
+			 "max" : 10
+		},
+		"growth" : 4,
+		"hitPoints" : 40,
+		"speed" : 7,
+		"fightValue" : 760,
+		"aiValue" : 764,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"graphics" :
+		{
+			"animation" : "Wizard/creatures/battle/c035ugol.def",
+			"map" : "Wizard/creatures/map/lv4upmap.def",
+			"iconSmall" : "Wizard/creatures/iconsSmall/CPrS035T.bmp",
+			"iconLarge" : "Wizard/creatures/iconsBig/cprs035.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+	   "abilities":
+		{
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			},
+			"magicResistance" :{"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any","val" : 30}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.blackKnight"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.dreadKnight"
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			}
+		],
+		"sound" :
+		{
+			"attack": "CRUSATTK.wav",
+			"defend": "CRUSDFND.wav",
+			"killed": "CRUSKILL.wav",
+			"move": "CRUSMOVE.wav",
+			"wince": "CRUSWNCE.wav"
+		}
+	}
+}
+
+
+

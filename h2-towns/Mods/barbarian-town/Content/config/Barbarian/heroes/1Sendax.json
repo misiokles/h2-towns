@@ -1,0 +1,44 @@
+{
+	"h2basendax" :
+	{
+		"class" : "h2baMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Barbarian/heroes/1Sendax/s-spec97.bmp",
+			"specialtyLarge" : "Barbarian/heroes/1Sendax/spec97.bmp",
+			"large" : "Barbarian/heroes/1Sendax/HPL096BR.bmp",
+			"small" : "Barbarian/heroes/1Sendax/HPS096BR.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2balv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2balv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2balv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "intelligence", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"texts" :
+		{
+			"name" : "森达克斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高食人魔或高级食人魔的攻击力与防御力。",
+				"tooltip" : "食人魔",
+				"name" : "食人魔"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2balv1"
+		}	
+	}
+}

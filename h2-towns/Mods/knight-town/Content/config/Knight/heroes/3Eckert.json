@@ -1,0 +1,55 @@
+{
+	"h2cseckert" :
+	{
+		"class" : "h2csMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/3Eckert/s-spec3.bmp",
+			"specialtyLarge" : "Knight/heroes/3Eckert/spec3.bmp",
+			"large" : "Knight/heroes/3Eckert/HPL002KN.bmp",
+			"small" : "Knight/heroes/3Eckert/HPS002KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+		],
+		"texts" :
+		{
+			"name" : "埃克特",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在箭术上每级得到5%的额外奖励。",
+				"tooltip" : "箭术",
+				"name" : "箭术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "damageTypeRanged",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}
+	}
+}

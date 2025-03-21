@@ -1,0 +1,44 @@
+{
+	"h2dedalia" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/13Dalia/s-spec141.bmp",
+			"specialtyLarge" : "Dervish/heroes/13Dalia/spec141.bmp",
+			"large" : "Dervish/heroes/13Dalia/HPL004EL.bmp",
+			"small" : "Dervish/heroes/13Dalia/HPS004EL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ballista", "max" : 1, "min" : 1 },
+			{ "creature" : "h2delv1", "min" :  10, "max" :  15 },
+			{ "creature" : "h2delv2", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "达利亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到5级以后提高蝎狮或高级蝎狮的攻击力与防御力。",
+				"tooltip" : "蝎狮",
+				"name" : "蝎狮",
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2delv5"
+		}	
+	}
+}

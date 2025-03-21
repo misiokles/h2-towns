@@ -1,0 +1,51 @@
+{
+	"h2wihalon" :
+	{
+		"class" : "h2wiMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/4Halon/s-spec36.bmp",
+			"specialtyLarge" : "Wizard/heroes/4Halon/spec36.bmp",
+			"large" : "Wizard/heroes/4Halon/HPL035AL.bmp",
+			"small" : "Wizard/heroes/4Halon/HPS035AL.bmp"
+		},
+                "army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "mysticism", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "哈龙",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在神秘术上每级得到5%的额外奖励。",
+				"tooltip" : "神秘术",
+				"name" : "神秘术"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}		
+	}
+}

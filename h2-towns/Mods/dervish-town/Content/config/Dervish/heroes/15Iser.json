@@ -1,0 +1,50 @@
+{
+	"h2deiser" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/15Iser/s-spec143.bmp",
+			"specialtyLarge" : "Dervish/heroes/15Iser/spec143.bmp",
+			"large" : "Dervish/heroes/15Iser/HPL006EL.bmp",
+			"small" : "Dervish/heroes/15Iser/HPS006EL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "eagleEye", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "伊瑟",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用疗伤魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "疗伤",
+				"name" : "疗伤"
+			}
+		},
+		"spellbook" :
+		[
+			"cure"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"addInfo" : 0,
+					"subtype" : "spell.cure",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
+			}
+		}
+	}
+}

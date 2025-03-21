@@ -1,0 +1,43 @@
+{
+	"h2nelanlu" :
+	{
+		"class" : "h2neMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/4Lanlu/s-spec68.bmp",
+			"specialtyLarge" : "Necromancer/heroes/4Lanlu/spec68.bmp",
+			"large" : "Necromancer/heroes/4Lanlu/HPL067DK.bmp",
+			"small" : "Necromancer/heroes/4Lanlu/HPS067DK.bmp"
+		},
+                "army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "artillery", "level": "basic" },
+			{ "skill" : "ne_nnecromancy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "兰鲁",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高弩车的攻击力与防御力。",
+				"tooltip" : "弩车",
+				"name" : "弩车",
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"creature" : "ballista"
+		}	
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"h2frxialong" :
+	{
+		"class" : "h2frMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/1Xialong/s-spec113.bmp",
+			"specialtyLarge" : "Witch/heroes/1Xialong/spec113.bmp",
+			"large" : "Witch/heroes/1Xialong/HPL112BS.bmp",
+			"small" : "Witch/heroes/1Xialong/HPS112BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "mysticism", "level": "basic" }
+		],
+		"spellbook" :
+		[
+		       "fireball"
+		],
+		"texts" :
+		{
+			"name" : "夏龙",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在神秘术上每级得到5%的额外奖励。",
+				"tooltip" : "神秘术",
+				"name" : "神秘术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}	
+	}
+}

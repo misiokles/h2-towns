@@ -1,0 +1,43 @@
+{
+	"h2dexerxes" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/10Xerxes/s-spec138.bmp",
+			"specialtyLarge" : "Dervish/heroes/10Xerxes/spec138.bmp",
+			"large" : "Dervish/heroes/10Xerxes/HPL001EL.bmp",
+			"small" : "Dervish/heroes/10Xerxes/HPS001EL.bmp"
+		},
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "mysticism", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "薛西斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "达到6级以后提高死神或高级死神的攻击力与防御力。",
+				"tooltip" : "死神",
+				"name" : "死神"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+        "specialty" : {
+			"creature" : "h2delv6"
+		}		
+	}
+}

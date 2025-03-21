@@ -1,0 +1,43 @@
+{
+	"h2demadan" :
+	{
+		"class" : "h2deMight",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/4Madan/s-spec132.bmp",
+			"specialtyLarge" : "Dervish/heroes/4Madan/spec132.bmp",
+			"large" : "Dervish/heroes/4Madan/HPL003PL.bmp",
+			"small" : "Dervish/heroes/4Madan/HPS003PL.bmp"
+		},
+                "army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "马丹",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高流氓或强盗的攻击力与防御力。",
+				"tooltip" : "流氓",
+				"name" : "流氓"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"creature" : "h2delv1"
+		}		
+	}
+}

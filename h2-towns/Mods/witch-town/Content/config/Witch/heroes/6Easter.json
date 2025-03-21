@@ -1,0 +1,58 @@
+{
+	"h2freaster" :
+	{
+		"class" : "h2frMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/6Easter/s-spec118.bmp",
+			"specialtyLarge" : "Witch/heroes/6Easter/spec118.bmp",
+			"large" : "Witch/heroes/6Easter/HPL117BS.bmp",
+			"small" : "Witch/heroes/6Easter/HPS117BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			},
+		],
+		"texts" :
+		{
+			"name" : "伊斯特",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用霹雳寒冰魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "霹雳寒冰",
+				"name" : "霹雳寒冰"
+			}
+		},
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"iceBolt" : {
+					"subtype" : "spell.iceBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}

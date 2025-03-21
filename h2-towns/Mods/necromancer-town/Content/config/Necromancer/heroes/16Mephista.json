@@ -1,0 +1,51 @@
+{
+	"h2nemephista" :
+	{
+		"class" : "h2neMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/16Mephista/s-spec80.bmp",
+			"specialtyLarge" : "Necromancer/heroes/16Mephista/spec80.bmp",
+			"large" : "Necromancer/heroes/16Mephista/HPLZ0001.bmp",
+			"small" : "Necromancer/heroes/16Mephista/hpsz0001.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "ne_nnecromancy", "level": "basic" },
+			{ "skill" : "sorcery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "墨菲斯塔",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "使用魔法神箭魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "魔法神箭",
+				"name" : "魔法神箭"
+			}
+		},
+		"spellbook" :
+		[
+		       "magicArrow"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"magicArrow" : {
+					"subtype" : "spell.magicArrow",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}		
+	}
+}

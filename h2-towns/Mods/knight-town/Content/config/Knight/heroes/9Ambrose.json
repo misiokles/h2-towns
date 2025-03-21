@@ -1,0 +1,49 @@
+{
+	"h2csambrose" :
+	{
+		"class" : "h2csMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/9Ambrose/s-spec9.bmp",
+			"specialtyLarge" : "Knight/heroes/9Ambrose/spec9.bmp",
+			"large" : "Knight/heroes/9Ambrose/HPL008CL.bmp",
+			"small" : "Knight/heroes/9Ambrose/HPS008CL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "安布罗斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高枪兵或高级枪兵的攻击力与防御力。",
+				"tooltip" : "枪兵和高级枪兵",
+				"name" : "枪兵"
+			}
+		},
+		"specialty" : {
+			"creature" : "h2cslv3"
+		}	
+	}
+}
+
+
+

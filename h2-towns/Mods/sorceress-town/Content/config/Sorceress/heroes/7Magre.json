@@ -1,0 +1,51 @@
+{
+	"h2somagre" :
+	{
+		"class" : "h2soMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/7Magre/s-spec23.bmp",
+			"specialtyLarge" : "Sorceress/heroes/7Magre/spec23.bmp",
+			"large" : "Sorceress/heroes/7Magre/HPL022RN.bmp",
+			"small" : "Sorceress/heroes/7Magre/HPS022RN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2solv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2solv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2solv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+                       {
+				"level" : "basic",
+				"skill" : "sorcery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "马格瑞",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高半羊人与高级半羊人的攻击力与防御力。",
+				"tooltip" : "半羊人",
+				"name" : "半羊人"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+		"creature" : "h2solv4"
+	    }						
+	}
+}

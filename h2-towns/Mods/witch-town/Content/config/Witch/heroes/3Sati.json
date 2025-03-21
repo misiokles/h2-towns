@@ -1,0 +1,53 @@
+{
+	"h2frsati" :
+	{
+		"class" : "h2frMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/3Sati/s-spec115.bmp",
+			"specialtyLarge" : "Witch/heroes/3Sati/spec115.bmp",
+			"large" : "Witch/heroes/3Sati/HPL114BS.bmp",
+			"small" : "Witch/heroes/3Sati/HPS114BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "萨提",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "为王国每天额外提供350个金币。",
+				"tooltip" : "+350个金币",
+				"name" : "+350个金币"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"gems" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}
+	}
+}

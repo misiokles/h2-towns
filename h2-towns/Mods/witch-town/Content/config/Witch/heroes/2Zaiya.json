@@ -1,0 +1,44 @@
+{
+	"h2frzaiya" :
+	{
+		"class" : "h2frMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/2Zaiya/s-spec114.bmp",
+			"specialtyLarge" : "Witch/heroes/2Zaiya/spec114.bmp",
+			"large" : "Witch/heroes/2Zaiya/HPL113BS.bmp",
+			"small" : "Witch/heroes/2Zaiya/HPS113BS.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "leadership", "level": "basic" },
+			{ "skill" : "armorer", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "宰亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到1级以后提高部落民或部落民兵的攻击力与防御力。",
+				"tooltip" : "部落民",
+				"name" : "部落民"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "h2frlv1"
+		}		
+	}
+}

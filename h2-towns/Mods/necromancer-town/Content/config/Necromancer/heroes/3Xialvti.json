@@ -1,0 +1,55 @@
+{
+	"h2nexialvti" :
+	{
+		"class" : "h2neMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Necromancer/heroes/3Xialvti/s-spec67.bmp",
+			"specialtyLarge" : "Necromancer/heroes/3Xialvti/spec67.bmp",
+			"large" : "Necromancer/heroes/3Xialvti/HPL066DK.bmp",
+			"small" : "Necromancer/heroes/3Xialvti/HPS066DK.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2nelv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2nelv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2nelv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "ne_nnecromancy"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "夏绿提",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "所带领生物的最小伤害值和最大伤害值各增加1。",
+				"tooltip" : "战争狂人",
+				"name" : "战争狂人"
+			}
+		},
+		"specialty" : {
+			"bonuses":{
+				"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType" : "BASE_NUMBER"
+					}
+				}
+		}
+	}
+}

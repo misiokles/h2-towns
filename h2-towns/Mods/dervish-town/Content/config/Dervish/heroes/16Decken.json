@@ -1,0 +1,53 @@
+{
+	"h2dedecken" :
+	{
+		"class" : "h2deMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Dervish/heroes/16Decken/s-spec144.bmp",
+			"specialtyLarge" : "Dervish/heroes/16Decken/spec144.bmp",
+			"large" : "Dervish/heroes/16Decken/HPL007EL.bmp",
+			"small" : "Dervish/heroes/16Decken/HPS007EL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2delv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2delv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2delv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "estates", "level": "basic" },
+			{ "skill" : "archery", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "德肯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在理财学上每级得到5%的额外奖励。",
+				"tooltip" : "理财学",
+				"name" : "理财学"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"estates" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}		
+	}
+}

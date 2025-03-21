@@ -1,0 +1,148 @@
+{
+	"h2solv3up":
+	{
+		"name" :
+		{
+			"plural" : "高级小精灵",
+			"singular" : "高级小精灵"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "h2sorceress",
+		"hasDoubleWeek": true,
+		"aiValue" : 597,
+		"attack" : 8,
+		"doubleWide" : false,
+                "cost" :
+		{
+			"gold" : 250
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 6,
+		"fightValue" : 561,
+		"graphics" :
+		{
+			
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animation" : "Sorceress/creatures/battle/c019uelf.def",
+			"map" : "Sorceress/creatures/map/lv3upmap.def",
+			"iconSmall" : "Sorceress/creatures/iconsSmall/CPrS019R.bmp",
+			"iconLarge" : "Sorceress/creatures/iconsBig/cprs019.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile": "PLCBOWX",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+        },
+		"growth" : 7,
+		"hitPoints" : 30,
+		"shots" : 24,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "RGRFATTK.wav",
+			"defend": "RGRFDFND.wav",
+			"killed": "RGRFKILL.wav",
+			"move": "RGRFMOVE.wav",
+			"wince": "RGRFWNCE.wav"
+		},
+		"speed" : 9,
+		"abilities":
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			
+			},
+		    "rangedRetaliation": { "type": "RANGED_RETALIATION" }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+					
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.paralyze", //paralyze,
+					"addInfo" : 74
+				},
+				"values" : [ 5, 5, 5, 5, 10, 10, 10, 15, 15, 20 ]				
+			},
+			{
+				"bonus" :
+				{ 
+					"type" : "DEATH_STARE" 
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]				
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 2 ]
+			}
+		]
+	}
+}

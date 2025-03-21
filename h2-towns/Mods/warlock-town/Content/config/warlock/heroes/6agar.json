@@ -1,0 +1,55 @@
+{
+	"h2waagar" : 
+	{
+		"class" : "h2warlock",
+
+
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/6agar/spec-small.bmp",
+			"specialtyLarge" : "warlock/heroes/6agar/spec-large.bmp",
+			"large" : "warlock/heroes/6agar/agar.bmp",
+			"small" : "warlock/heroes/6agar/agarl.bmp"
+		},
+        "texts" :
+		{
+			"name" : "阿伽",
+			"biography" : "阿伽起初是一个雄心勃勃的中年术士，服务于阿拉马。在追随阿基巴德·铁拳并战败后，他决定留在恩洛斯，再也没有听到任何关于他的消息。",
+			"specialty" :
+			{
+				"description" : "达到4级以后提高邪眼与高级邪眼的攻击力与防御力。",
+				"tooltip" : "邪眼",
+				"name" : "邪眼"
+			}
+		},
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "scouting"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "h2medusa"
+		}
+    }
+}	

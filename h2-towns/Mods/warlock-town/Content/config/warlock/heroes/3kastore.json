@@ -1,0 +1,69 @@
+{
+	"h2wakastore" :
+	{
+		"class" : "h2warlock",
+		"texts" :
+		{
+			"name" : "卡斯托",
+			"biography" : "卡斯托在恩洛斯参加了两次战争，大概还呆在那里。",
+			"specialty" :
+			{
+				"description" : "在防御术上每级得到5%的额外奖励。",
+				"tooltip" :  "技能加成：防御术",
+				"name" : "防御术"
+			}
+		},
+
+
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/3kastore/spec-small.bmp",
+			"specialtyLarge" : "warlock/heroes/3kastore/spec-large.bmp",
+			"large" : "warlock/heroes/3kastore/kastore.bmp",
+			"small" : "warlock/heroes/3kastore/kastorel.bmp"
+		},
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

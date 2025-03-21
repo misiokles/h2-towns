@@ -1,0 +1,70 @@
+{
+	"h2waarch" :
+	{
+		"class" : "h2warlock",
+        "texts" :
+		{
+			"name" : "阿基巴德",
+			"biography" : "阿基巴德是1127年至1129年统治恩洛斯的摩格林·铁拳国王所生的两个儿子之一，罗兰德·铁拳的兄弟。摩格林·铁拳国王于1151年辞世后，阿基巴德撤出了所有领地，被恩洛斯的先知选为罗兰德的下一位继承人。",
+			"specialty" :
+			{
+				"description" : "在侦察术上每级获得5%的提升。",
+				"tooltip" :  "侦察术",
+				"name" : "侦察术"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/17arch/spec-small.bmp",
+			"specialtyLarge" : "warlock/heroes/17arch/spec-large.bmp",
+			"large" : "warlock/heroes/17arch/arch.bmp",
+			"small" : "warlock/heroes/17arch/archl.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+                "sight" : {
+					"type" : "SIGHT_RADIUS",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+                    "updater" : {
+                        "parameters" : [ 6 ],
+                        "type" : "GROWS_WITH_LEVEL"
+                    }
+				}
+			}	
+		}
+	}
+}
+

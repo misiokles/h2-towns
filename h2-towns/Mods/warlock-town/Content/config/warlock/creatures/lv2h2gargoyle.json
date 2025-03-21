@@ -1,0 +1,128 @@
+{
+	"h2gargoyle":
+	{
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 16
+		},
+		"faction" : "warlock",
+		"aiValue" : 171,
+		"attack" : 4,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 2
+		},
+		"defense" : 7,
+		"fightValue" : 152,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/CR197.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lilgarg.def",
+			"iconSmall" : "warlock/iconsSmall/CPrS197F.bmp",
+			"iconLarge" : "warlock/iconsBig/CPrL197B.bmp",
+			"timeBetweenFidgets" : 1,
+		},			
+		"growth" : 6,
+		"hitPoints" : 18,
+        "level" : 2,
+		"name" : { "plural" : "石像鬼", "singular" : "石像鬼" },
+		"upgrades":
+		[
+			"h2gargoyle2"
+		],
+		"sound" :
+		{
+			"attack": "SGRGATTK.wav",
+			"defend": "SGRGDFND.wav",
+			"killed": "SGRGKILL.wav",
+			"move": "SGRGMOVE.wav",
+			"wince": "SGRGWNCE.wav"
+		},
+		"speed" : 10,
+		"abilities" :
+		{
+            "nonliving" :
+			{
+				"type" : "NON_LIVING"
+			},
+           		"flying" :
+			{
+				"type" : "FLYING"
+			}
+		},
+		"stackExperience" :
+		[
+{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.stoneSkin",
+					"addInfo" : 3
+				},
+				"values" : [ 0, 0, 1, 1, 2, 2, 2, 2, 3, 3 ]	
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "spellSchool.earth",
+				    "type" : "SPELL_SCHOOL_IMMUNITY"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			}
+		]
+	}
+}

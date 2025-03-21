@@ -1,0 +1,80 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"h2csDwelling1" : {
+				"name" : "草屋",
+				"creatures" : [[ "h2cslv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Knight/creatures/dwellings/lv1AVGpike0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2csDwelling2" : {
+				"name" : "箭术靶场",
+				"creatures" : [[ "h2cslv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "Knight/creatures/dwellings/lv2AVGcros0.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"h2csDwelling3" : {
+				"name" : "警卫室",
+				"creatures" : [[ "h2cslv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "Knight/creatures/dwellings/lv3AVGgrff0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2csDwelling4" : {
+				"name" : "训练场",
+				"creatures" : [[ "h2cslv4" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Knight/creatures/dwellings/lv4AVGswor0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2csDwelling5" : {
+				"name" : "兵工厂",
+				"creatures" : [[ "h2cslv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Knight/creatures/dwellings/lv5AVGmonk0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2csDwelling6" : {
+				"name" : "马术竞技场",
+				"creatures" : [[ "h2cslv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "Knight/creatures/dwellings/lv6AVGcavl0.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"h2csDwelling7" : {
+				"name" : "大教堂",
+				"creatures" : [[ "h2cslv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+			 "animation" : "Knight/creatures/dwellings/lv7AVGangl0.def",
+		       "mask" : [ "VVVV", "VVVV", "VVBB", "VVBA" ]
+					}
+				}
+			}
+		}
+	}	
+}

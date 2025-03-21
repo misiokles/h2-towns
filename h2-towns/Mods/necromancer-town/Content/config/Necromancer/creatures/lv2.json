@@ -1,0 +1,139 @@
+{
+	"h2nelv2":
+	{
+		"name" :
+		{
+			"plural" : "僵尸",
+			"singular" : "僵尸"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "h2necromancer",
+		"upgrades": ["h2nelv2up"],
+		"level" : 2,
+		"attack" : 6,
+		"defense" : 3,
+		"damage" :
+		{
+			 "min" : 2,
+			 "max" : 3
+		},
+		"growth" : 9,
+		"hitPoints" : 10,
+		"speed" : 5,
+		"shots" : 24,
+		"fightValue" : 223,
+		"aiValue" : 220,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"graphics" :
+		{
+			"animation" : "Necromancer/creatures/battle/c058zomb.def",
+			"map" : "Necromancer/creatures/map/lv2map.def",
+			"iconSmall" : "Necromancer/creatures/iconsSmall/CPrS058N.bmp",
+			"iconLarge" : "Necromancer/creatures/iconsBig/cprs058.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "LCRSATTK.wav",
+			"defend": "LCRSDFND.wav",
+			"killed": "LCRSKILL.wav",
+			"move": "LCRSMOVE.wav",
+			"shoot": "LCRSSHOT.wav",
+			"wince": "LCRSWNCE.wav"
+         },
+		"abilities" :
+		{
+			
+		   "undead" :
+		    {
+			   "type" : "UNDEAD"
+		    },
+		   "castDisease" : {"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disease","val" : 10}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values" : [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

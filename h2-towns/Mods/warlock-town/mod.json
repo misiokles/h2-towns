@@ -1,0 +1,79 @@
+{
+	"name" : "Warlock town",
+	"description" : "Warlock Town from Homm2",
+	"author" : "Acidchalk",
+	"contact" : "",
+	"version" : "1.0",
+	"modType" : "Town",
+	"language": "chinese",
+	"chinese" : {
+		"name" : "男巫",
+		"description" : "新城镇男巫。"
+	},
+
+	"factions" :
+	[
+		"config/warlock/town/buildings.json",
+		"config/warlock/town/faction.json",
+		"config/warlock/town/siege.json",
+		"config/warlock/town/spells.json",
+		"config/warlock/town/structures.json",
+		"config/warlock/town/puzzle.json"
+	],
+	"creatures" :
+	[
+
+		"config/warlock/creatures/lv1h2centaur.json",
+        "config/warlock/creatures/lv1uph2centaur2.json",
+		
+		"config/warlock/creatures/lv2h2gargoyle.json",
+        "config/warlock/creatures/lv2uph2gargoyle2.json",
+
+		"config/warlock/creatures/lv3h2griffin.json",
+        "config/warlock/creatures/lv3uph2griffin2.json",
+		
+        "config/warlock/creatures/lv4h2medusa.json",
+		"config/warlock/creatures/lv4uph2medusa2.json",
+		
+		"config/warlock/creatures/lv5h2mino.json",
+		"config/warlock/creatures/lv5uph2minok.json",
+
+		"config/warlock/creatures/lv6h2hydra.json",
+        "config/warlock/creatures/lv6uph2hydra2.json",		
+		
+		"config/warlock/creatures/lv7h2gred.json",
+		"config/warlock/creatures/lv7uph2redd.json",
+		"config/warlock/creatures/lv7up2h2blackd.json",
+		
+		"config/warlock/creatures/commander.json"
+		
+
+	],
+	"heroClasses" :
+	[
+		"config/warlock/classes/h2warlock.json",
+		"config/warlock/classes/h2warlockfem.json"
+	],
+	"heroes" :
+	[
+		"config/warlock/heroes/1Amigo.json",
+		"config/warlock/heroes/2crodo.json",		
+		"config/warlock/heroes/3kastore.json",
+		"config/warlock/heroes/4falagar.json",
+		"config/warlock/heroes/5Vihovlin.json",
+		"config/warlock/heroes/6agar.json",
+		"config/warlock/heroes/7wrathmont.json",
+		"config/warlock/heroes/8Quentin.json",
+		"config/warlock/heroes/9Vigo.json",
+		"config/warlock/heroes/10Zoltan.json",
+		"config/warlock/heroes/11vesper.json",
+		"config/warlock/heroes/12Moab.json",
+		"config/warlock/heroes/13barok.json",
+		"config/warlock/heroes/14arie.json",
+		"config/warlock/heroes/15Gargoyle.json",
+		"config/warlock/heroes/16alamar.json",
+		"config/warlock/heroes/17arch.json",		
+		"config/warlock/heroes/18martine.json"		
+	],
+	"objects" : [ "config/warlock/dwellings" ]
+}

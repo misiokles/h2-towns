@@ -1,0 +1,62 @@
+{
+	"h2wawrathmont" :
+	{
+		"class" : "h2warlock",
+		"texts" :
+		{
+			"name" : "拉托蒙",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "达到3级以后提高狮鹫与高级狮鹫的攻击力与防御力。",
+				"tooltip" : "狮鹫",
+				"name" : "狮鹫"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "warlock/heroes/7wrathmont/s-spec87.bmp",
+			"specialtyLarge" : "warlock/heroes/7wrathmont/spec87.bmp",
+			"large" : "warlock/heroes/7wrathmont/wrathmont.bmp",
+			"small" : "warlock/heroes/7wrathmont/wrathmontl.bmp"
+		},
+
+		"spellbook" :
+		[
+			"weakness"
+		],
+		"army" :
+		[
+			{
+				"creature" : "h2centaur",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "h2gargoyle",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "h2griffin",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "h2griffin"
+		}
+	}
+}

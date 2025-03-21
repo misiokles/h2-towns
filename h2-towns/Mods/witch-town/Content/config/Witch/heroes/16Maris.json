@@ -1,0 +1,60 @@
+{
+	"h2frmaris" :
+	{
+		"class" : "h2frMight",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Witch/heroes/16Maris/s-spec128.bmp",
+			"specialtyLarge" : "Witch/heroes/16Maris/spec128.bmp",
+			"large" : "Witch/heroes/16Maris/HPL127WH.bmp",
+			"small" : "Witch/heroes/16Maris/HPS127WH.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2frlv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2frlv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2frlv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "resistance", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "马利斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "消除战场上所有生物天生的魔法抗性。",
+				"tooltip" : "穿透魔抗",
+				"name" : "穿透魔抗"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+				"bonuses" : {
+			"magicVulnerability":			{
+				"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+				"subtype" : "immunityBattleWide",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"propagator": "BATTLE_WIDE"
+					},
+			"magicVulnerability2":			{
+				"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+				"subtype" : "immunityEnemyHero",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER",
+				"propagator": "BATTLE_WIDE"
+					
+					}
+			}	
+		}		
+	}
+}

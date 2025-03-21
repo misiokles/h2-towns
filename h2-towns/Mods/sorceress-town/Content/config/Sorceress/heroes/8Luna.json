@@ -1,0 +1,51 @@
+{
+	"h2soluna" :
+	{
+		"class" : "h2soMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Sorceress/heroes/8Luna/s-spec24.bmp",
+			"specialtyLarge" : "Sorceress/heroes/8Luna/spec24.bmp",
+			"large" : "Sorceress/heroes/8Luna/HPL023RN.bmp",
+			"small" : "Sorceress/heroes/8Luna/HPS023RN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2solv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2solv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2solv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "鲁那",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "使用祝福魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+				"tooltip" : "祝福",
+				"name" : "祝福"
+			}
+		},
+		"spellbook" :
+		[
+			"bless"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bless" : {
+					"subtype" : "spell.bless",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}			
+			}
+		}
+	}
+}

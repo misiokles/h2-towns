@@ -1,0 +1,124 @@
+{
+	"h2balv1":
+	{
+		"name" :
+		{
+			"plural" : "妖怪",
+			"singular" : "妖怪"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 20,
+			 "max" : 50
+		},
+		"faction" : "h2barbarian",
+		"upgrades": ["h2balv1up"],
+		"level" : 1,
+		"attack" : 4,
+		"defense" : 1,
+		"damage" :
+		{
+			 "min" : 1,
+			 "max" : 3
+		},
+		"growth" : 24,
+		"horde" : 10,
+		"hitPoints" : 3,
+		"speed" : 6,
+		"fightValue" : 35,
+		"aiValue" : 28,
+		"cost" :
+		{
+			"gold" : 30
+		},
+		"graphics" :
+		{
+			"animation" : "Barbarian/creatures/battle/c084gobl.def",
+			"map" : "Barbarian/creatures/map/lv1map.def",
+			"iconSmall" : "Barbarian/creatures/iconsSmall/CPrS084S.bmp",
+			"iconLarge" : "Barbarian/creatures/iconsBig/cprs084.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "PIKEDFND.wav",
+			"killed": "PIKEKILL.wav",
+			"move": "PIKEMOVE.wav",
+			"wince": "PIKEWNCE.wav"
+        },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+
+
+
+
+
+
+
+
+

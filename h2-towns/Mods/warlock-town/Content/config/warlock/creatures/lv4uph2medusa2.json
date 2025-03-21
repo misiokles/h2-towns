@@ -1,0 +1,156 @@
+{
+	"h2medusa2":
+	{
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"faction" : "warlock",
+		"aiValue" : 1000,
+		"attack" : 13,
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"cost" :
+		{
+			"gold" : 850
+		},
+		"defense" : 9,
+		"fightValue" : 1000,
+		"graphics" :
+		{
+			"animation" : "warlock/battle/c077bhldup.DEF",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "warlock/map/lv6upmap.def",
+			"iconSmall" : "warlock/iconsSmall/CPrS077D.bmp",
+			"iconLarge" : "warlock/iconsBig/cprs077.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"doubleWide" : false,
+		"growth" : 8,
+		"hitPoints" : 50,
+		"level" : 4,
+		"name" : { "plural" : "高级邪眼", "singular" : "高级邪眼" },
+		"sound" :
+		{
+			"attack": "MEDUATTK.wav",
+			"defend": "MEDUDFND.wav",
+			"killed": "MEDUKILL.wav",
+			"move": "MEDUMOVE.wav",
+			"wince": "MEDUWNCE.wav"
+		},
+		"speed" : 10,
+		"abilities" :
+		{
+			"petrification" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 20,
+				"addInfo" : 2000 // FIXME: replace with range field?
+			},
+            "canFly" : {	"type" : "FLYING"	},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.stoneGaze"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY" 
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "RECEPTIVE" 
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			}
+		]
+	}
+}

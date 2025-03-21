@@ -1,0 +1,194 @@
+{
+	"h2deMagic" :
+	{
+		"name" : "苦修士",
+		"description" : "{XX}\n种族阵营： XX，XX\n种族地形： XX\n所在地： XX大陆-XX王国\n补充中。",
+		"nativeTerrain": "sand",
+		"boat" : "boatCastle",
+		"alignment" : "neutral",
+		"creatureBackground" :
+		{
+			"120px" : "Dervish/creature-bg-120px.bmp",
+			"130px" : "Dervish/creature-bg-130px.bmp"
+		},
+		"town" :
+		{
+			"mapObject" :
+			{
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"castle" :  { "animation" : "Dervish/adventure-map/town/avchforx.def" },
+					"citadel" : { "animation" : "Dervish/adventure-map/town/avchforx.def" },
+					"fort"    : { "animation" : "Dervish/adventure-map/town/AVChfor0.def" },
+					"village" : { "animation" : "Dervish/adventure-map/town/AVChfor0.def" },
+					"capitol" : { "animation" : "Dervish/adventure-map/town/avchforx.def" }
+				}
+			},
+
+			"musicTheme" : ["music/factions/CampainMusic06"],
+			"defaultTavern" : 5,
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 4,
+				"ranger"       : 2,
+				"druid"        : 2,
+				"alchemist"    : 5,
+				"wizard"       : 5,
+				"demoniac"     : 5,
+				"heretic"      : 5,
+				"deathknight"  : 5,
+				"necromancer"  : 5,
+				"warlock"      : 5,
+				"overlord"     : 5,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 5,
+				"planeswalker" : 5,
+				"elementalist" : 5,
+                "h2deMight"    : 5,
+                "h2deMagic"    : 5
+			},
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"guildSpells" : {
+				"bless": 10,
+                "bloodlust": 0,
+                "cure": 10,
+                "curse": 0,
+                "dispel": 10,
+                "haste": 5,
+                "magicArrow": 30,
+                "protectFire": 3,
+                "protectWater": 3,
+                "shield": 10,
+                "slow": 5,
+                "stoneSkin": 5,
+                "summonBoat": 3,
+                "viewAir": 3,
+                "viewEarth": 3,
+                "blind": 4,
+                "deathRipple": 0,
+                "disguise": 2,
+                "disruptingRay": 6,
+                "fireWall": 4,
+                "fortune": 4,
+                "iceBolt": 50,
+                "lightningBolt": 4,
+                "precision": 6,
+                "quicksand": 4,
+                "removeObstacle": 4,
+                "scuttleBoat": 6,
+                "visions": 2,
+                "weakness": 2,
+                "airShield": 4,
+                "animateDead": 0,
+                "antiMagic": 12,
+                "destroyUndead": 12,
+                "earthquake": 4,
+                "fireball": 8,
+                "forceField": 4,
+                "forgetfulness": 8,
+                "frostRing": 16,
+                "hypnotize": 4,
+                "landMine": 8,
+                "mirth": 4,
+                "misfortune": 4,
+                "protectAir": 2,
+                "protectEarth": 4,
+                "teleport": 8,
+                "armageddon": 0,
+                "berserk": 5,
+                "chainLightning": 10,
+                "clone": 5,
+                "counterstrike": 5,
+                "fireShield": 5,
+                "frenzy": 5,
+                "inferno": 5,
+                "meteorShower": 10,
+                "prayer": 10,
+                "resurrection": 10,
+                "slayer": 5,
+                "sorrow": 5,
+                "townPortal": 10,
+                "waterWalk": 10,
+                "airElemental": 4,
+                "dimensionDoor": 4,
+                "earthElemental": 5,
+                "fireElemental": 5,
+                "fly": 5,
+                "implosion": 4,
+                "magicMirror": 6,
+                "sacrifice": 0,
+                "waterElemental": 5
+			},
+			"townBackground": "Dervish/town-screen/background.bmp",
+			"guildWindow": "Dervish/town-screen/mage-guild.bmp",
+			"buildingsIcons": "Dervish/HallElem.def",
+			"hallBackground": "Dervish/town-screen/ZPTHBKDG.bmp",
+            "primaryResource" : "gems",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1" ], [ "shipyard" ] ],
+				[ [ "special2" ], [ "special3", "special4" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ] ]
+			],
+			"creatures" :
+			[
+				["h2delv1", "h2delv1up"],
+				["h2delv2", "h2delv2up"],
+				["h2delv3", "h2delv3up"],
+				["h2delv4", "h2delv4up"],
+				["h2delv5", "h2delv5up"],
+				["h2delv6", "h2delv6up"],
+				["h2delv7", "h2delv7up"]
+			],
+			"horde" : [ 0, -1 ],
+			"icons" : {
+				"fort" : {
+					"built" : {
+						"large" : "Dervish/icons/fort-builded-big.bmp",
+						"small" : "Dervish/icons/fort-builded-small.bmp"
+					},
+					"normal" : { "large" : "Dervish/icons/fort-big.bmp", "small" : "Dervish/icons/fort-small.bmp" }
+				},
+				"village" : {
+					"built" : {
+						"large" : "Dervish/icons/hall-builded-big.bmp",
+						"small" : "Dervish/icons/hall-builded-small.bmp"
+					},
+					"normal" : { "large" : "Dervish/icons/hall-big.bmp", "small" : "Dervish/icons/hall-small.bmp" }
+				}
+                        },
+			"mageGuild" : 5,
+			"moatAbility" : "castleMoat",
+			"names" : [
+				"桑所巴尔",
+                "魔沙之城",
+                "德拉嘉顿",
+                "阿维尼",
+                "庞格萨特",
+                "安提阿",
+                "梅勒梅克",
+                "马麦丁",
+                "守护门",
+                "火风城",
+                "绿洲之城",
+                "文图",
+                "卢名",
+                "蜃楼城",
+                "极光之城",
+                "拜森吉",
+                "阿拉穆特"
+			]
+		}
+	}
+}
+

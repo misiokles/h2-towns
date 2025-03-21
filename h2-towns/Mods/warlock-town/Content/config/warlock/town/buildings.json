@@ -1,0 +1,465 @@
+{
+	"warlock" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+					"id" : 0
+				},
+				"mageGuild2" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"id" : 1,
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"id" : 2,
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : 
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"id" : 3,
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 10,
+						"ore" : 5,
+						"sulfur" : 10,
+						"crystal" : 10,
+						"gems" : 10,
+						"gold" : 1000
+					},
+					"id" : 4,
+					"upgrades" : "mageGuild4"
+				},
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 5
+				},
+				"shipyard" :
+				{
+					"name" : "船坞",
+					"description" : "船坞允许你购买船只。",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					},
+					"id" : 6
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					},
+					"id" : 7
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"id" : 8,
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"id" : 9,
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"id" : 10,
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"id" : 11,
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"id" : 12,
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"id" : 13,
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 14
+				},
+				"resourceSilo" :
+				{
+					"description" : "商队帐篷每天为你额外提供1硫磺。",
+					"name" : "商队帐篷",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"produce": { "sulfur": 1 },
+					"requires" : [ "marketplace" ],
+					"id" : 15
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供弩车。",
+					"name" : "铁匠铺",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"warMachine" : "ballista",
+					"id" : 16
+				},
+				"horde1" :
+				{
+					"description" : "瀑布使半人马和高级半人马的周产量+8。",
+					"id" : 17,
+					"name" : "瀑布",
+					"upgrades" : "dwellingLvl1",
+					"cost" : {
+						"gold" : 1000
+					},
+				},
+				"horde1Upgr" :
+				{
+					"description" : "瀑布使半人马和高级半人马的周产量+8。",
+					"id" : 18,
+					"name" : "瀑布",
+					"requires" : ["horde1"],
+					"upgrades" : "dwellingUpLvl1",
+					"cost" : {
+						"gold" : 1000
+					},
+					"mode" : "auto"
+				},
+				"ship" :
+				{
+					"name" : "船只",
+					"description" : "船员们正在等待起航。",
+					"id" : 20
+				},
+				"special1" :
+				{
+					"description" : "古井使你可以花钱学习四种派系的魔法。",
+					"name" : "古井",
+					"cost" : {
+						"gold" : 500
+					},
+					"requires" : [ "resourceSilo" ],
+					"marketModes" : ["resource-skill"],
+					"id" : 24
+				},
+				"statue" :
+				{
+					"description" : "雕像每天为你额外提供250个金币。",
+					"produce" : { "gold" : 250 },
+					"name" : "雕像",
+						"cost" : {
+						"ore" : 5,
+						"gold" : 1250
+					},
+					"requires" : [ "mageGuild1" ],
+					"id" : 21
+				},
+				"grail" :
+				{
+					"description" : "召唤神石使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，，并使所有的已方英雄魔力值+10。",
+					"name" : "召唤神石",
+					"produce": { "gold": 5000 },
+                    "bonuses" : [ { "type": "PRIMARY_SKILL", "subtype": "primarySkill.spellpower", "val": 10 } ],
+					"id" : 26,
+					"mode" : "grail"
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "洞穴允许你招募半人马。",
+					"name" : "洞穴",
+					"cost" : {
+						"gold" : 800
+					},
+					"requires" : [ "fort" ],
+					"id" : 30
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "地穴允许你招募石像鬼。",
+					"name" : "地穴",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 10
+					},
+					"requires" : [ "allOf", [ "fort" ], [ "blacksmith" ] ],
+					"id" : 31
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "巢穴允许你招募狮鹫。",
+					"name" : "巢穴",
+					"cost" : {
+						"gold" : 2000
+					},
+					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "blacksmith" ] ],
+					"id" : 32
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "土牢允许你招募邪眼。",
+					"name" : "土牢",
+					"cost" : {
+						"gold" : 3000,
+						"gems" : 10
+						},
+					"requires" : [ "dwellingLvl3" ],
+					"id" : 33
+				},
+								
+				"dwellingLvl5" :
+				{
+					"description" : "迷宫允许你招募牛头怪。",
+					"name" : "迷宫",
+					"cost" : {
+						"gold" : 4000,
+						"sulfur" : 10
+						},
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "dwellingLvl2" ] ],
+					"id" : 34
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "沼泽允许你招募九头蛇。",
+					"name" : "沼泽",
+					"cost" : {
+						"gold" : 8000,
+						"ore" : 5,
+						"wood" : 5,
+						"sulfur" : 5,
+						"gems" : 5
+					},
+					"requires" : [ "dwellingLvl4" ],
+					"id" : 35
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "绿塔允许你招募绿龙。",
+					"name" : "绿塔",
+					"cost" : {
+						"gold" : 15000,
+	     				"ore" : 30,
+						"sulfur" : 20
+					},
+					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "dwellingLvl5" ] ],
+					"id" : 36
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级洞穴允许你招募高级半人马。",
+					"name" : "高级洞穴",
+					"cost" : {
+						"gold" : 1000
+					},
+					"id" : 37
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级地穴允许你招募高级石像鬼。",
+					"name" : "高级地穴",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 10
+					},
+					"requires" : [ "dwellingLvl1" ],
+					"id" : 38
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级巢穴允许你招募高级狮鹫。",
+					"name" : "高级巢穴",
+					"cost" : {
+						"gold" : 2500
+					},
+					"requires" :   [ "allOf", ["fort"],["dwellingUpLvl1"] ],	
+					"id" : 39
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级土牢允许你招募高级邪眼。",
+					"name" : "高级土牢",
+					"cost" : {
+						"mercury" : 5,
+						"ore" : 5,
+						"wood" : 5,
+						"gold" : 1500,
+						"crystal" : 5
+					},
+					"id" : 40,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "高级迷宫允许你招募牛头王。",
+					"name" : "高级迷宫",
+					"cost" : {
+						"gold" : 5000,
+						"sulfur" : 12
+						},
+					"requires" : [ "dwellingLvl3" ],
+					"id" : 41,
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "高级沼泽允许你招募高级九头蛇。",
+					"name" : "高级沼泽",
+					"cost" : {
+						"gold" : 9000,
+						"ore" : 6,
+						"wood" : 5,
+						"sulfur" : 6,
+						"gems" : 5
+					},
+					"requires" : [ "dwellingLvl4" ],
+					"id" : 42,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "红塔允许你招募红龙。",
+					"name" : "红塔",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 5000,
+						"sulfur" : 10
+					},
+					"id" : 43,
+					"upgrades" : "dwellingLvl7"
+				},
+				"dwellingUp2Lvl7" :
+				{
+					"description" : "黑塔允许你招募黑龙。",
+					"name" : "黑塔",
+					"cost" : {
+						"ore" : 5,
+						"gold" : 5000,
+						"sulfur" : 10
+					},
+					"id" : 50,
+					"upgrades" : "dwellingUpLvl7"
+				}				
+			}
+		}
+	}
+}
+

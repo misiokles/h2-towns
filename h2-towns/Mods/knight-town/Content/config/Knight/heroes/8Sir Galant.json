@@ -1,0 +1,44 @@
+{
+	"h2cssirgalant" :
+	{
+		"class" : "h2csMagic",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "Knight/heroes/8Sirgalant/s-spec8.bmp",
+			"specialtyLarge" : "Knight/heroes/8Sirgalant/spec8.bmp",
+			"large" : "Knight/heroes/8Sirgalant/HPL007KN.bmp",
+			"small" : "Knight/heroes/8Sirgalant/HPS007KN.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2cslv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2cslv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2cslv3", "min" :  3, "max" :  6 }
+		],
+		"skills":
+		[
+			{ "skill" : "wisdom", "level": "basic" },
+			{ "skill" : "diplomacy", "level": "basic" }
+		],
+		"texts" :
+		{
+			"name" : "盖兰特爵士",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" : 
+			{
+				"description" : "达到1级以后提高农民与民兵的攻击力与防御力。",
+				"tooltip" : "农民",
+				"name" : "农民"
+			}
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"specialty" : {
+			"creature" : "h2cslv1"
+		}	
+	}
+}

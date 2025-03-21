@@ -1,0 +1,56 @@
+{
+	"h2wiflint" :
+	{
+		"class" : "h2wiMagic",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "Wizard/heroes/3Flint/s-spec35.bmp",
+			"specialtyLarge" : "Wizard/heroes/3Flint/spec35.bmp",
+			"large" : "Wizard/heroes/3Flint/HPL034AL.bmp",
+			"small" : "Wizard/heroes/3Flint/HPS034AL.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "h2wilv1", "min" : 9, "max" : 15 },
+			{ "creature" : "h2wilv2", "min" :  6, "max" :  9 },
+			{ "creature" : "h2wilv3", "min" :  3, "max" :  6 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "navigation"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "弗林特",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在领航术上每级得到5%的额外奖励。",
+				"tooltip" : "领航术",
+				"name" : "领航术"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"navigation" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementSea",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

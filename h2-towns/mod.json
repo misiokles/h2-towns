@@ -1,0 +1,21 @@
+{
+	"name" : "H2 Towns",
+	"description" : "Migration towns from Heroes2 to VCMI",
+	"version" : "1.0.0",
+	"author" : "menzhiyuan",
+	"contact" : "https://vk.com/",
+	"modType": "Expansion",
+	"language": "chinese",
+	"compatibility" :
+	{
+		"min" : "1.5.0"
+	},
+	"changelog" :
+    {
+		"1.0.0"   : [ "Initial release" ]
+    },
+	"chinese" : {
+		"name" : "英雄无敌2城镇",
+		"description" : "将英雄无敌2城镇迁移到VCMI中。"
+	}
+}
